@@ -136,7 +136,6 @@
       <object>objects\obj_draw_score</object>
     </objects>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\room_test</room>
   </rooms>
