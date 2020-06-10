@@ -34,7 +34,6 @@ enum ej{
     attack = scr_player_attack,
     death = scr_player_death
 }
-
 //Actions
 dir = "right";
 state = ej.quiet;
@@ -43,7 +42,6 @@ canFly = 0;
 bullet = 15;
 bullet_max = 0;
 timeFly= 0;
-
 //Scores
 coins = 100;
 score1 = 100;
@@ -97,9 +95,9 @@ live = 100;
     timeFly -=1;
 }
 else{
-canFly = 0;
-timeFly = 0;
-with(obj_effect_fly){ instance_destroy(); }
+    canFly = 0;
+    timeFly = 0;
+    with(obj_effect_fly){ instance_destroy(); }
 }
 </string>
           </argument>
@@ -181,7 +179,6 @@ if (canFly = 1){
     if(alarm[0] == -1){
     alarm[0] = 1 * room_speed;}
 }
-
 
 script_execute(state);
 </string>
@@ -480,28 +477,6 @@ state = ej.walk;
         </arguments>
       </action>
     </event>
-    <event eventtype="5" enumb="32">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string></string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="5" enumb="0">
       <action>
         <libid>1</libid>
@@ -520,7 +495,6 @@ state = ej.walk;
           <argument>
             <kind>1</kind>
             <string>state = ej.quiet;
-
 </string>
           </argument>
         </arguments>
