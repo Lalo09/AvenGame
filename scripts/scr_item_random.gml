@@ -11,5 +11,7 @@ switch(item){
     case 10: instance_change(obj_fly,true); break;
     case 13: instance_change(obj_live,true); break;
     case 15: instance_change(obj_inmunity,true); break;
+    case 16: instance_change(obj_inmunity,true); break;
+    case 18: instance_change(obj_inmunity,true); break;
     default:instance_change(obj_coin,true); break;
 }

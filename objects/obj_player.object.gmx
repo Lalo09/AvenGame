@@ -42,6 +42,38 @@ canFly = 0;
 bullet = 15;
 bullet_max = 0;
 timeFly= 0;
+inmunity=0;
+timeInmunity=0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (timeInmunity &gt; 0){
+    timeInmunity -=1;
+}
+else{
+    inmunity = 0;
+    timeInmunity = 0;
+    with(obj_effect_inmunity){ instance_destroy(); }
+}
 </string>
           </argument>
         </arguments>
@@ -176,7 +208,6 @@ if key_jump and !place_free(x,y+1){
     state = ej.quiet;
     //vspeed = -16.5;
     vspeed = -13;
-    instance_create(obj_player.x,obj_player.y,obj_effect_fly);
     }
 }
 
@@ -197,6 +228,11 @@ if key_jump and vspeed &gt; 0{
 if (canFly = 1){
     if(alarm[0] == -1){
     alarm[0] = 1 * room_speed;}
+}
+
+if (inmunity = 1){
+    if(alarm[3] == -1){
+    alarm[3] = 1 * room_speed;}
 }
 
 if global.healths = 0{
@@ -231,8 +267,11 @@ script_execute(state);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(alarm[2] == -1) {
+            <string>if(inmunity = 0){
+if(alarm[2] == -1) {
 alarm[2]=1*room_speed;
+}
+instance_create(self.x,self.y,obj_damage);
 }
 </string>
           </argument>
@@ -281,9 +320,12 @@ global.score1 += 1000;
           <argument>
             <kind>1</kind>
             <string>audio_play_sound(sd_powerup_take,1,false);
+global.score1 += 900;
 with(other){
-    instance_destroy();
+    instance_change(obj_effect_inmunity,true);
 }
+inmunity=1;
+timeInmunity=8;
 </string>
           </argument>
         </arguments>
@@ -336,7 +378,7 @@ with(other){
             <string>audio_play_sound(sd_powerup_take,1,false);
 global.score1 += 800;
 with(other){
-    instance_destroy();
+    instance_change(obj_effect_fly,true);
 }
 canFly = 1;
 timeFly=8;

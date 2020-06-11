@@ -2,7 +2,7 @@ top = 9
 
 //set font and color
 draw_set_font(font_main);
-draw_set_colour(make_colour_rgb(133, 133, 133));
+draw_set_colour(make_colour_rgb(201, 201, 201));
 
 //draw score
 draw_text(view_xview[0] + 285, view_yview[0] + top, global.score1 );
@@ -118,4 +118,33 @@ if obj_player.canFly = 1{
 }  
           
 //draw bar inmunity
+if obj_player.inmunity = 1{
+    if (obj_player.timeInmunity = 8 ) {
+        draw_sprite(spr_bar_inmunity,1,view_xview[0]+2, view_yview[0] + 102);
+    }
+    else if (obj_player.timeInmunity = 7 ) {
+        draw_sprite(spr_bar_inmunity,3,view_xview[0]+2, view_yview[0] + 102);
+    }
+    else if (obj_player.timeInmunity = 6 ) {
+        draw_sprite(spr_bar_inmunity,5,view_xview[0]+2, view_yview[0] + 102);
+    }
+    else if (obj_player.timeInmunity = 5 ) {
+        draw_sprite(spr_bar_inmunity,7,view_xview[0]+2, view_yview[0] + 102);
+    }
+     else if (obj_player.timeInmunity = 4 ) {
+        draw_sprite(spr_bar_inmunity,9,view_xview[0]+2, view_yview[0] + 102);
+    }
+     else if (obj_player.timeInmunity = 3 ) {
+        draw_sprite(spr_bar_inmunity,11,view_xview[0]+2, view_yview[0] + 102);
+    }
+     else if (obj_player.timeInmunity = 2 ) {
+        draw_sprite(spr_bar_inmunity,13,view_xview[0]+2, view_yview[0] + 102);
+    }
+     else if (obj_player.timeInmunity = 1 ) {
+        draw_sprite(spr_bar_inmunity,15,view_xview[0]+2, view_yview[0] + 102);
+    }
+    if (obj_player.timeInmunity = 0 ) {
+        draw_sprite(spr_bar_inmunity,17,view_xview[0]+2, view_yview[0] + 102);
+    }
+}  
 //bar_shoot = draw_sprite(spr_bar_inmunity,0-16,view_xview[0]+2, view_yview[0] + 102);

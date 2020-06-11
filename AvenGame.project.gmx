@@ -16,6 +16,7 @@
       <sound>sound\sd_death</sound>
       <sound>sound\sd_fly</sound>
       <sound>sound\sd_kill_enemy</sound>
+      <sound>sound\sd_hurt_player</sound>
     </sounds>
     <sounds name="music">
       <sound>sound\music_main</sound>
@@ -71,6 +72,7 @@
       <sprite>sprites\spr_bullet_max</sprite>
       <sprite>sprites\spr_bullet_mega_brick</sprite>
       <sprite>sprites\spr_effect_fly</sprite>
+      <sprite>sprites\spr_effect_inmunity</sprite>
       <sprites name="screen">
         <sprite>sprites\spr_coin_screen</sprite>
         <sprite>sprites\spr_health_bar</sprite>
@@ -80,6 +82,9 @@
         <sprite>sprites\spr_bar_inmunity</sprite>
       </sprites>
       <sprite>sprites\spr_mask_enemy</sprite>
+      <sprite>sprites\spr_damage</sprite>
+      <sprite>sprites\spr_effect_fly2</sprite>
+      <sprite>sprites\spr_effect_inmunity_2</sprite>
     </sprites>
     <sprites name="Platforms">
       <sprite>sprites\spr_mask</sprite>
@@ -141,6 +146,8 @@
       <object>objects\obj_draw_score</object>
       <object>objects\obj_kill_enemy</object>
       <object>objects\obj_create_variables</object>
+      <object>objects\obj_effect_inmunity</object>
+      <object>objects\obj_damage</object>
     </objects>
     <objects name="Enemies">
       <object>objects\obj_enemy_parent</object>
