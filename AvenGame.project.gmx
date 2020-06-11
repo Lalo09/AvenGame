@@ -15,6 +15,7 @@
       <sound>sound\sd_jump</sound>
       <sound>sound\sd_death</sound>
       <sound>sound\sd_fly</sound>
+      <sound>sound\sd_kill_enemy</sound>
     </sounds>
     <sounds name="music">
       <sound>sound\music_main</sound>
@@ -102,8 +103,9 @@
       <script>scripts\scr_player_death.gml</script>
     </scripts>
     <script>scripts\scr_item_random.gml</script>
-    <script>scripts\scr_restart.gml</script>
+    <script>scripts\scr_no_lives.gml</script>
     <script>scripts\scr_draw_screen.gml</script>
+    <script>scripts\scr_no_health.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_main</font>
@@ -137,12 +139,15 @@
     <objects name="Extra">
       <object>objects\obj_effect_fly</object>
       <object>objects\obj_draw_score</object>
+      <object>objects\obj_kill_enemy</object>
+      <object>objects\obj_create_variables</object>
     </objects>
     <objects name="Enemies">
       <object>objects\obj_enemy_parent</object>
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room_variables</room>
     <room>rooms\room_test</room>
   </rooms>
   <help>

@@ -5,17 +5,40 @@ draw_set_font(font_main);
 draw_set_colour(make_colour_rgb(133, 133, 133));
 
 //draw score
-draw_text(view_xview[0] + 285, view_yview[0] + top, obj_player.score1 );
+draw_text(view_xview[0] + 285, view_yview[0] + top, global.score1 );
 
 //draw health and lives
-draw_sprite(spr_health_bar,0,view_xview[0]+2, view_yview[0] + 2);
+if global.healths = 8{
+   draw_sprite(spr_health_bar,0,view_xview[0]+2, view_yview[0] + 2); 
+}
+else if global.healths = 7{
+   draw_sprite(spr_health_bar,1,view_xview[0]+2, view_yview[0] + 2); 
+}
+else if global.healths = 6{
+   draw_sprite(spr_health_bar,2,view_xview[0]+2, view_yview[0] + 2); 
+}
+else if global.healths = 5{
+   draw_sprite(spr_health_bar,3,view_xview[0]+2, view_yview[0] + 2); 
+}
+else if global.healths = 4{
+   draw_sprite(spr_health_bar,4,view_xview[0]+2, view_yview[0] + 2); 
+}
+else if global.healths = 3{
+   draw_sprite(spr_health_bar,5,view_xview[0]+2, view_yview[0] + 2); 
+}
+else if global.healths = 2{
+   draw_sprite(spr_health_bar,6,view_xview[0]+2, view_yview[0] + 2); 
+}
+else if global.healths = 1{
+   draw_sprite(spr_health_bar,7,view_xview[0]+2, view_yview[0] + 2); 
+}
 draw_text(view_xview[0] + 131, view_yview[0] + top, "X" );
-draw_text(view_xview[0] + 152, view_yview[0] + top, obj_player.live);
+draw_text(view_xview[0] + 152, view_yview[0] + top, global.live);
 
 //draw coins    
 draw_sprite(spr_coin_screen,0,view_xview[0]+490, view_yview[0] );
 draw_text(view_xview[0] + 520, view_yview[0] + top , "X" );
-draw_text(view_xview[0] + 538, view_yview[0] + top  , obj_player.coins);
+draw_text(view_xview[0] + 538, view_yview[0] + top  , global.coins);
 
 //draw bar shoot
 switch(obj_player.bullet){

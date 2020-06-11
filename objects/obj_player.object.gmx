@@ -42,10 +42,29 @@ canFly = 0;
 bullet = 15;
 bullet_max = 0;
 timeFly= 0;
-//Scores
-coins = 100;
-score1 = 100;
-live = 100;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.healths = global.healths - 1 ;
 </string>
           </argument>
         </arguments>
@@ -180,7 +199,41 @@ if (canFly = 1){
     alarm[0] = 1 * room_speed;}
 }
 
+if global.healths = 0{
+    if global.live = 0 {
+        script_execute(scr_no_lives);
+    }
+    else if global.live &gt; 0{
+        script_execute(scr_no_health);
+    }
+}
+
 script_execute(state);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_enemy_parent">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(alarm[2] == -1) {
+alarm[2]=1*room_speed;
+}
 </string>
           </argument>
         </arguments>
@@ -204,6 +257,7 @@ script_execute(state);
           <argument>
             <kind>1</kind>
             <string>// do something
+global.score1 += 1000;
 </string>
           </argument>
         </arguments>
@@ -252,7 +306,8 @@ with(other){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(sd_powerup_take,1,false);
+            <string>global.live += 1;
+audio_play_sound(sd_powerup_take,1,false);
 with(other){
     instance_destroy();
 }
@@ -279,6 +334,7 @@ with(other){
           <argument>
             <kind>1</kind>
             <string>audio_play_sound(sd_powerup_take,1,false);
+global.score1 += 800;
 with(other){
     instance_destroy();
 }
@@ -308,6 +364,7 @@ timeFly=8;
           <argument>
             <kind>1</kind>
             <string>audio_play_sound(sd_powerup_take,1,false);
+global.score1 += 400;
 with(other){
     instance_destroy();
 }
@@ -336,6 +393,7 @@ bullet_max = 28;
           <argument>
             <kind>1</kind>
             <string>audio_play_sound(sd_powerup_take,1,false);
+global.score1 += 600;
 with(other){
     instance_destroy();
 }
@@ -362,7 +420,9 @@ gum = 3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(sd_coin,1,false);
+            <string>global.coins += 1;
+global.score1 += 100;
+audio_play_sound(sd_coin,1,false);
 with(other){
     instance_destroy();
 }
@@ -389,6 +449,7 @@ with(other){
           <argument>
             <kind>1</kind>
             <string>audio_play_sound(sd_powerup_take,1,false);
+global.score1 += 200;
 with(other){
     instance_destroy();
 }
@@ -519,6 +580,7 @@ state = ej.walk;
             <kind>1</kind>
             <string>audio_stop_all();
 audio_play_sound(sd_death,1,false);
+global.live -= 1;
 </string>
           </argument>
         </arguments>
