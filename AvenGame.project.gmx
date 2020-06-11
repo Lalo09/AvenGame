@@ -20,7 +20,6 @@
     </sounds>
     <sounds name="music">
       <sound>sound\music_main</sound>
-      <sound>sound\sound10</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -88,7 +87,11 @@
     </sprites>
     <sprites name="Platforms">
       <sprite>sprites\spr_mask</sprite>
+      <sprite>sprites\spr_mask_false</sprite>
       <sprite>sprites\spr_platform_mov</sprite>
+      <sprite>sprites\spr_platform_mov_fric</sprite>
+      <sprite>sprites\spr_platform_brick</sprite>
+      <sprite>sprites\spr_platform_enemy</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -122,6 +125,10 @@
     <objects name="plattforms">
       <object>objects\obj_mask</object>
       <object>objects\obj_platform_mov_ver</object>
+      <object>objects\obj_platform_mov_ver_fals</object>
+      <object>objects\obj_platform_false</object>
+      <object>objects\obj_platform_mov_fric</object>
+      <object>objects\obj_brick</object>
     </objects>
     <objects name="items">
       <object>objects\obj_gum_normal</object>
@@ -153,6 +160,7 @@
       <object>objects\obj_enemy_parent</object>
     </objects>
   </objects>
+  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\room_variables</room>
     <room>rooms\room_test</room>

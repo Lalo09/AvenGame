@@ -44,6 +44,7 @@ bullet_max = 0;
 timeFly= 0;
 inmunity=0;
 timeInmunity=0;
+down = 0;
 </string>
           </argument>
         </arguments>
@@ -245,6 +246,61 @@ if global.healths = 0{
 }
 
 script_execute(state);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_brick">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if vspeed &gt; 0 and y&lt;other.y+8 {
+    other.alarm[0] = 43;
+}
+vspeed = 0;
+move_contact_solid(270,12);
+state = ej.quiet
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_platform_false">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if other.solid = true {
+    vspeed = 0;
+    move_contact_solid(270,12);
+    state = ej.quiet
+}
 </string>
           </argument>
         </arguments>
@@ -507,6 +563,33 @@ else if bullet &gt;= 15{
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_platform_mov_ver">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if other.solid = true{
+vspeed = 0;
+move_contact_solid(270,12);
+state = ej.quiet
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_mask">
       <action>
         <libid>1</libid>
@@ -735,6 +818,35 @@ else if canFly = 1{
         </arguments>
       </action>
     </event>
+    <event eventtype="9" enumb="40">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>down = 1;
+if obj_platform_false.solid = true then {
+    obj_platform_false.solid = false;
+}
+else{
+    exit;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="9" enumb="27">
       <action>
         <libid>1</libid>
@@ -799,6 +911,29 @@ else if canFly = 1{
           <argument>
             <kind>1</kind>
             <string>state = ej.quiet;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="40">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>down = 0;
 </string>
           </argument>
         </arguments>
