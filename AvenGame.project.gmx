@@ -155,15 +155,17 @@
       <object>objects\obj_create_variables</object>
       <object>objects\obj_effect_inmunity</object>
       <object>objects\obj_damage</object>
+      <object>objects\obj_test</object>
     </objects>
     <objects name="Enemies">
       <object>objects\obj_enemy_parent</object>
     </objects>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\room_variables</room>
+    <room>rooms\room_menu</room>
     <room>rooms\room_test</room>
+    <room>rooms\room_game_over</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

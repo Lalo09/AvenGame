@@ -50,6 +50,70 @@ down = 0;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.healths = 8;
+global.live = 3;
+global.coins = 0;
+global.score1 = 0;
+room_goto(room_menu);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if global.live &gt; 0 {
+    room_restart()
+    instance_activate_all();
+    global.live -= 1;
+    global.healths = 8;
+}
+else if global.live = 0 {
+    global.healths = 8;
+    global.live = 3;
+    global.coins = 0;
+    global.score1 = 0;
+    room_goto(room_menu);
+    
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="3">
       <action>
         <libid>1</libid>
@@ -237,70 +301,18 @@ if (inmunity = 1){
 }
 
 if global.healths = 0{
-    if global.live = 0 {
-        script_execute(scr_no_lives);
-    }
-    else if global.live &gt; 0{
-        script_execute(scr_no_health);
-    }
+    //if global.live = 0 {
+        //script_execute(scr_no_lives);
+        //alarm[5] = 8*room_speed;
+        instance_deactivate_all(true);
+    //}
+    //else if global.live &gt; 0{
+        //script_execute(scr_no_health);
+      //  instance_deactivate_all(true);
+    //}
 }
 
 script_execute(state);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_brick">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if vspeed &gt; 0 and y&lt;other.y+8 {
-    other.alarm[0] = 43;
-}
-vspeed = 0;
-move_contact_solid(270,12);
-state = ej.quiet
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_platform_false">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if other.solid = true {
-    vspeed = 0;
-    move_contact_solid(270,12);
-    state = ej.quiet
-}
 </string>
           </argument>
         </arguments>
@@ -563,6 +575,61 @@ else if bullet &gt;= 15{
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_brick">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if vspeed &gt; 0 and y&lt;other.y+8 {
+    other.alarm[0] = 43;
+}
+vspeed = 0;
+move_contact_solid(270,12);
+state = ej.quiet
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_platform_false">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if other.solid = true {
+    vspeed = 0;
+    move_contact_solid(270,12);
+    state = ej.quiet
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_platform_mov_ver">
       <action>
         <libid>1</libid>
@@ -703,9 +770,25 @@ state = ej.walk;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_all();
+            <string>//change player state to death
+audio_stop_all();
+state = ej.quiet;
+//instance_deactivate_all(true);
+//execute alarm[4]
+alarm[4] = 8 * room_speed;
+//get out live
+//if global.live = 0{
+ //  script_execute(scr_no_lives);
+//}
+//else{
+    //set new health
+    //global.healths = 8;
+//}
+
+//global.live -= 1;
+//execute sound kill
 audio_play_sound(sd_death,1,false);
-global.live -= 1;
+//room_restart();
 </string>
           </argument>
         </arguments>

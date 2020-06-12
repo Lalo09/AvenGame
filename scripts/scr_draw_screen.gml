@@ -33,7 +33,12 @@ else if global.healths = 1{
    draw_sprite(spr_health_bar,7,view_xview[0]+2, view_yview[0] + 2); 
 }
 draw_text(view_xview[0] + 131, view_yview[0] + top, "X" );
-draw_text(view_xview[0] + 152, view_yview[0] + top, global.live);
+if global.live >= 0 {
+    draw_text(view_xview[0] + 152, view_yview[0] + top, global.live);
+}else{
+    draw_text(view_xview[0] + 152, view_yview[0] + top, 0);
+    draw_text(view_xview[0] + 265, view_yview[0] + top + 200, "Game Over" );
+}
 
 //draw coins    
 draw_sprite(spr_coin_screen,0,view_xview[0]+490, view_yview[0] );
