@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-5</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,33 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alpha = 0;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>alpha += 0.05;
-if alpha = 0 {
-    instance_destroy();
-}
+            <string>image_speed = 0.6;
+audio_play_sound(music_menu,1,true);
 </string>
           </argument>
         </arguments>
@@ -74,10 +49,16 @@ if alpha = 0 {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_alpha(alpha);
-draw_set_colour(c_black);
-draw_rectangle(0,0,view_xview[0] ,view_yview[0],false);
+            <string>//set font and color
+draw_set_font(font_title);
+draw_set_colour(make_colour_rgb(201, 201, 201));
+draw_text(view_xview[0] + 192, view_yview[0] + 128, "Aven" );
+draw_sprite (spr_player_walk_right,0-3,view_xview[0] + 190, view_yview[0] + 384);
 
+draw_set_font(font_main);
+draw_set_colour(make_colour_rgb(210, 210, 210));
+draw_text(view_xview[0] + 288, view_yview[0] + 224, "Play" );
+draw_text(view_xview[0] + 288, view_yview[0] + 256, "Info" );
 </string>
           </argument>
         </arguments>

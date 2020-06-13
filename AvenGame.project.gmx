@@ -17,9 +17,11 @@
       <sound>sound\sd_fly</sound>
       <sound>sound\sd_kill_enemy</sound>
       <sound>sound\sd_hurt_player</sound>
+      <sound>sound\sd_select</sound>
     </sounds>
     <sounds name="music">
       <sound>sound\music_main</sound>
+      <sound>sound\music_menu</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -93,10 +95,21 @@
       <sprite>sprites\spr_platform_brick</sprite>
       <sprite>sprites\spr_platform_enemy</sprite>
     </sprites>
+    <sprites name="Maps">
+      <sprite>sprites\spr_player_map</sprite>
+      <sprite>sprites\sprite50</sprite>
+      <sprite>sprites\spr_world_map</sprite>
+    </sprites>
+    <sprites name="Menu">
+      <sprite>sprites\spr_buttom</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="tiles">
-      <background>background\tile_1</background>
+      <background>background\tiles_bricks</background>
+      <background>background\tiles_worlds</background>
+      <background>background\tiles_city</background>
+      <background>background\tiles_map</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
@@ -117,6 +130,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_main</font>
+    <font>fonts\font_title</font>
   </fonts>
   <objects name="objects">
     <objects name="player">
@@ -161,10 +175,20 @@
     <objects name="Enemies">
       <object>objects\obj_enemy_parent</object>
     </objects>
+    <objects name="map">
+      <object>objects\obj_player_map</object>
+      <object>objects\object32</object>
+      <object>objects\obj_world_map</object>
+    </objects>
+    <objects name="Menu">
+      <object>objects\obj_menu</object>
+      <object>objects\obj_buttom_select</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_variables</room>
     <room>rooms\room_menu</room>
+    <room>rooms\room_map_test</room>
     <room>rooms\room_test</room>
     <room>rooms\room_game_over</room>
   </rooms>
