@@ -156,6 +156,7 @@
       <object>objects\obj_effect_inmunity</object>
       <object>objects\obj_damage</object>
       <object>objects\obj_test</object>
+      <object>objects\obj_fade_in</object>
     </objects>
     <objects name="Enemies">
       <object>objects\obj_enemy_parent</object>

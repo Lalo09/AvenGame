@@ -770,7 +770,8 @@ state = ej.walk;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//change player state to death
+            <string>if obj_player.y &gt; view_yview[view_current]+8{
+//change player state to death
 audio_stop_all();
 state = ej.quiet;
 //instance_deactivate_all(true);
@@ -789,6 +790,7 @@ alarm[4] = 8 * room_speed;
 //execute sound kill
 audio_play_sound(sd_death,1,false);
 //room_restart();
+}
 </string>
           </argument>
         </arguments>
