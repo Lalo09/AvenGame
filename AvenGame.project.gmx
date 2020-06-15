@@ -22,6 +22,7 @@
     <sounds name="music">
       <sound>sound\music_main</sound>
       <sound>sound\music_menu</sound>
+      <sound>sound\music_map123</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -86,6 +87,8 @@
       <sprite>sprites\spr_damage</sprite>
       <sprite>sprites\spr_effect_fly2</sprite>
       <sprite>sprites\spr_effect_inmunity_2</sprite>
+      <sprite>sprites\spr_fade_in</sprite>
+      <sprite>sprites\spr_fade_out</sprite>
     </sprites>
     <sprites name="Platforms">
       <sprite>sprites\spr_mask</sprite>
@@ -97,11 +100,17 @@
     </sprites>
     <sprites name="Maps">
       <sprite>sprites\spr_player_map</sprite>
-      <sprite>sprites\sprite50</sprite>
       <sprite>sprites\spr_world_map</sprite>
     </sprites>
     <sprites name="Menu">
       <sprite>sprites\spr_buttom</sprite>
+      <sprite>sprites\spr_menu_bar</sprite>
+      <sprite>sprites\spr_info</sprite>
+    </sprites>
+    <sprites name="Enemies">
+      <sprites name="pink monster">
+        <sprite>sprites\spr_monster_pink_walk</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -114,6 +123,9 @@
   </backgrounds>
   <paths name="paths">
     <path>paths\path_item</path>
+    <paths name="worlds">
+      <path>paths\path_map_w1</path>
+    </paths>
   </paths>
   <scripts name="scripts">
     <scripts name="player">
@@ -170,25 +182,27 @@
       <object>objects\obj_effect_inmunity</object>
       <object>objects\obj_damage</object>
       <object>objects\obj_test</object>
-      <object>objects\obj_fade_in</object>
+      <object>objects\obj_fade_in2</object>
+      <object>objects\obj_fade_out</object>
     </objects>
     <objects name="Enemies">
       <object>objects\obj_enemy_parent</object>
     </objects>
     <objects name="map">
       <object>objects\obj_player_map</object>
-      <object>objects\object32</object>
       <object>objects\obj_world_map</object>
     </objects>
     <objects name="Menu">
       <object>objects\obj_menu</object>
       <object>objects\obj_buttom_select</object>
+      <object>objects\obj_menu_bar</object>
+      <object>objects\obj_spr_player_menu</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_variables</room>
     <room>rooms\room_menu</room>
-    <room>rooms\room_map_test</room>
+    <room>rooms\room_worlds123</room>
     <room>rooms\room_test</room>
     <room>rooms\room_game_over</room>
   </rooms>

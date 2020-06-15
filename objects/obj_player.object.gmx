@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>playerSpeed = 4.8;
+            <string>playerSpeed = 5.5;
 audio_play_sound(music_main,1,true);
 enum ej{
     quiet = scr_player_quiet,
@@ -45,6 +45,29 @@ timeFly= 0;
 inmunity=0;
 timeInmunity=0;
 down = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="6">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//instance_create(view_xview[0],view_yview[0],obj_fade_out);
 </string>
           </argument>
         </arguments>
@@ -108,6 +131,7 @@ else if global.live = 0 {
     room_goto(room_menu);
     
 }
+instance_create(view_xview[0],view_yview[0],obj_fade_out);
 
 </string>
           </argument>
@@ -777,6 +801,7 @@ state = ej.quiet;
 //instance_deactivate_all(true);
 //execute alarm[4]
 alarm[4] = 8 * room_speed;
+alarm[6] = 2 * room_speed;
 //get out live
 //if global.live = 0{
  //  script_execute(scr_no_lives);

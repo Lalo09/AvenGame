@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>play = true;
+x = view_xview[0]+256;
+y = view_yview[0]+224;
 </string>
           </argument>
         </arguments>
@@ -64,9 +66,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_all();
+            <string>if play = true {
+audio_stop_all();
 audio_play_sound(sd_coin,1,false);
 alarm [0] = 35;
+instance_create(0,0,obj_fade_out);
+}
+else{
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>
