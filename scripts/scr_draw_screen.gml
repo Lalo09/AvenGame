@@ -152,4 +152,3 @@ if obj_player.inmunity = 1{
         draw_sprite(spr_bar_inmunity,17,view_xview[0]+2, view_yview[0] + 102);
     }
 }  
-//bar_shoot = draw_sprite(spr_bar_inmunity,0-16,view_xview[0]+2, view_yview[0] + 102);

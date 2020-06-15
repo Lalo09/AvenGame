@@ -68,7 +68,7 @@
       <sprite>sprites\spr_effect_destroy</sprite>
       <sprite>sprites\spr_kill_enemy</sprite>
     </sprites>
-    <sprites name="Extra">
+    <sprites name="extra">
       <sprite>sprites\spr_bullet</sprite>
       <sprite>sprites\spr_bullet_mega</sprite>
       <sprite>sprites\spr_bullet_max</sprite>
@@ -90,7 +90,7 @@
       <sprite>sprites\spr_fade_in</sprite>
       <sprite>sprites\spr_fade_out</sprite>
     </sprites>
-    <sprites name="Platforms">
+    <sprites name="platforms">
       <sprite>sprites\spr_mask</sprite>
       <sprite>sprites\spr_mask_false</sprite>
       <sprite>sprites\spr_platform_mov</sprite>
@@ -98,16 +98,16 @@
       <sprite>sprites\spr_platform_brick</sprite>
       <sprite>sprites\spr_platform_enemy</sprite>
     </sprites>
-    <sprites name="Maps">
+    <sprites name="maps">
       <sprite>sprites\spr_player_map</sprite>
       <sprite>sprites\spr_world_map</sprite>
     </sprites>
-    <sprites name="Menu">
+    <sprites name="menu">
       <sprite>sprites\spr_buttom</sprite>
       <sprite>sprites\spr_menu_bar</sprite>
       <sprite>sprites\spr_info</sprite>
     </sprites>
-    <sprites name="Enemies">
+    <sprites name="enemies">
       <sprites name="pink monster">
         <sprite>sprites\spr_monster_pink_walk</sprite>
       </sprites>
@@ -128,7 +128,7 @@
     </paths>
   </paths>
   <scripts name="scripts">
-    <scripts name="player">
+    <scripts name="player_states">
       <script>scripts\scr_player_quiet.gml</script>
       <script>scripts\scr_player_walk.gml</script>
       <script>scripts\scr_player_jump.gml</script>
@@ -136,9 +136,19 @@
       <script>scripts\scr_player_death.gml</script>
     </scripts>
     <script>scripts\scr_item_random.gml</script>
-    <script>scripts\scr_no_lives.gml</script>
     <script>scripts\scr_draw_screen.gml</script>
     <script>scripts\scr_no_health.gml</script>
+    <scripts name="player_keys">
+      <script>scripts\scr_release_down.gml</script>
+      <script>scripts\scr_release_right.gml</script>
+      <script>scripts\scr_release_left.gml</script>
+      <script>scripts\scr_press_z.gml</script>
+      <script>scripts\scr_press_x.gml</script>
+      <script>scripts\scr_press_down.gml</script>
+      <script>scripts\scr_right.gml</script>
+      <script>scripts\scr_left.gml</script>
+      <script>scripts\scr_no_key.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_main</font>
@@ -174,7 +184,7 @@
       <object>objects\obj_bullet_mega</object>
       <object>objects\obj_bullet_brick</object>
     </objects>
-    <objects name="Extra">
+    <objects name="extra">
       <object>objects\obj_effect_fly</object>
       <object>objects\obj_draw_score</object>
       <object>objects\obj_kill_enemy</object>
@@ -185,14 +195,14 @@
       <object>objects\obj_fade_in2</object>
       <object>objects\obj_fade_out</object>
     </objects>
-    <objects name="Enemies">
+    <objects name="enemies">
       <object>objects\obj_enemy_parent</object>
     </objects>
     <objects name="map">
       <object>objects\obj_player_map</object>
       <object>objects\obj_world_map</object>
     </objects>
-    <objects name="Menu">
+    <objects name="menu">
       <object>objects\obj_menu</object>
       <object>objects\obj_buttom_select</object>
       <object>objects\obj_menu_bar</object>
@@ -200,11 +210,14 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room_variables</room>
-    <room>rooms\room_menu</room>
-    <room>rooms\room_worlds123</room>
+    <rooms name="rooms initial">
+      <room>rooms\room_variables</room>
+      <room>rooms\room_menu</room>
+    </rooms>
     <room>rooms\room_test</room>
-    <room>rooms\room_game_over</room>
+    <rooms name="rooms world 1">
+      <room>rooms\room_map1</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

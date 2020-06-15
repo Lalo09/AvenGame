@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>image_speed = 0.8;
 to_world = 1;
+can_start=false;
 audio_play_sound(music_map123,1,true);
 </string>
           </argument>
@@ -97,6 +98,29 @@ audio_play_sound(music_map123,1,true);
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="8">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>can_start = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="4">
       <action>
         <libid>1</libid>
@@ -114,7 +138,7 @@ audio_play_sound(music_map123,1,true);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm [0] = 2 * room_speed;
+            <string>alarm [0] = 25;
 </string>
           </argument>
         </arguments>
@@ -165,10 +189,12 @@ draw_sprite(spr_player_map,0-2,self.x,self.y);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_all();
+            <string>if can_start = true{
+audio_stop_all();
 audio_play_sound(sd_select,1,false);
 alarm[1] = 35;
 instance_create(view_xview,view_yview,obj_fade_out);
+}
 </string>
           </argument>
         </arguments>
