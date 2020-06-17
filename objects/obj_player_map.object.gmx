@@ -3,7 +3,7 @@
   <spriteName>spr_player_map</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,10 +25,31 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.8;
-to_world = 1;
-can_start=false;
-audio_play_sound(music_map123,1,true);
+            <string>to_world = 1;
+next_room = "";
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_goto(next_room);
 </string>
           </argument>
         </arguments>
@@ -37,17 +58,26 @@ audio_play_sound(music_map123,1,true);
     <event eventtype="2" enumb="1">
       <action>
         <libid>1</libid>
-        <id>222</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_next_room</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>audio_play_sound(sd_select,1,false);
+instance_create(0,0,obj_fade_out);
+alarm[2]=12;
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="2" enumb="0">
@@ -69,6 +99,9 @@ audio_play_sound(music_map123,1,true);
             <kind>1</kind>
             <string>if to_world = 1{
     path_start(path_map_w1,5,path_action_stop,false);
+}
+else if to_world = 2{
+    path_start(path_map_w2,5,path_action_stop,false);
 }
 </string>
           </argument>
@@ -93,6 +126,8 @@ audio_play_sound(music_map123,1,true);
           <argument>
             <kind>1</kind>
             <string>to_world = other.world;
+//current_world = other.current_world;
+next_room = other.to_room;
 </string>
           </argument>
         </arguments>
@@ -115,7 +150,7 @@ audio_play_sound(music_map123,1,true);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>can_start = true;
+            <string>alarm[1] = 28;
 </string>
           </argument>
         </arguments>
@@ -139,6 +174,7 @@ audio_play_sound(music_map123,1,true);
           <argument>
             <kind>1</kind>
             <string>alarm [0] = 25;
+audio_play_sound(music_map123,1,true);
 </string>
           </argument>
         </arguments>
@@ -167,34 +203,6 @@ draw_set_colour(make_colour_rgb(201, 201, 201));
 draw_text(view_xview[0] + 225, view_yview[0] + top, "World ");
 draw_text(view_xview[0] + 340, view_yview[0] + top, to_world );
 draw_sprite(spr_player_map,0-2,self.x,self.y);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="88">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if can_start = true{
-audio_stop_all();
-audio_play_sound(sd_select,1,false);
-alarm[1] = 35;
-instance_create(view_xview,view_yview,obj_fade_out);
-}
 </string>
           </argument>
         </arguments>

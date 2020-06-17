@@ -18,11 +18,13 @@
       <sound>sound\sd_kill_enemy</sound>
       <sound>sound\sd_hurt_player</sound>
       <sound>sound\sd_select</sound>
+      <sound>sound\sd_game_over</sound>
+      <sound>sound\sd_win</sound>
     </sounds>
     <sounds name="music">
-      <sound>sound\music_main</sound>
       <sound>sound\music_menu</sound>
       <sound>sound\music_map123</sound>
+      <sound>sound\music_city</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -89,6 +91,8 @@
       <sprite>sprites\spr_effect_inmunity_2</sprite>
       <sprite>sprites\spr_fade_in</sprite>
       <sprite>sprites\spr_fade_out</sprite>
+      <sprite>sprites\spr_portal</sprite>
+      <sprite>sprites\spr_portal_next_level</sprite>
     </sprites>
     <sprites name="platforms">
       <sprite>sprites\spr_mask</sprite>
@@ -125,6 +129,7 @@
     <path>paths\path_item</path>
     <paths name="worlds">
       <path>paths\path_map_w1</path>
+      <path>paths\path_map_w2</path>
     </paths>
   </paths>
   <scripts name="scripts">
@@ -177,6 +182,9 @@
       <object>objects\obj_live</object>
       <object>objects\obj_inmunity</object>
       <object>objects\obj_skull</object>
+      <object>objects\obj_portal</object>
+      <object>objects\obj_test_portal</object>
+      <object>objects\obj_portal_next_level</object>
     </objects>
     <objects name="gums">
       <object>objects\obj_bullet</object>
@@ -194,6 +202,8 @@
       <object>objects\obj_test</object>
       <object>objects\obj_fade_in2</object>
       <object>objects\obj_fade_out</object>
+      <object>objects\obj_player_game_over</object>
+      <object>objects\obj_draw_game_over</object>
     </objects>
     <objects name="enemies">
       <object>objects\obj_enemy_parent</object>
@@ -213,10 +223,13 @@
     <rooms name="rooms initial">
       <room>rooms\room_variables</room>
       <room>rooms\room_menu</room>
+      <room>rooms\room_game_over</room>
     </rooms>
-    <room>rooms\room_test</room>
     <rooms name="rooms world 1">
       <room>rooms\room_map1</room>
+      <room>rooms\room_test</room>
+      <room>rooms\room_test2</room>
+      <room>rooms\room_test3</room>
     </rooms>
   </rooms>
   <help>
