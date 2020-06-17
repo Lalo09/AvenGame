@@ -93,6 +93,7 @@
       <sprite>sprites\spr_fade_out</sprite>
       <sprite>sprites\spr_portal</sprite>
       <sprite>sprites\spr_portal_next_level</sprite>
+      <sprite>sprites\spr_portal_next_world</sprite>
     </sprites>
     <sprites name="platforms">
       <sprite>sprites\spr_mask</sprite>
@@ -103,8 +104,8 @@
       <sprite>sprites\spr_platform_enemy</sprite>
     </sprites>
     <sprites name="maps">
-      <sprite>sprites\spr_player_map</sprite>
       <sprite>sprites\spr_world_map</sprite>
+      <sprite>sprites\spr_player_map</sprite>
     </sprites>
     <sprites name="menu">
       <sprite>sprites\spr_buttom</sprite>
@@ -132,6 +133,7 @@
       <path>paths\path_map_w2</path>
       <path>paths\path_map_w3</path>
     </paths>
+    <path>paths\path_player_end_world</path>
   </paths>
   <scripts name="scripts">
     <scripts name="player_states">
@@ -186,6 +188,8 @@
       <object>objects\obj_portal</object>
       <object>objects\obj_test_portal</object>
       <object>objects\obj_portal_next_level</object>
+      <object>objects\obj_portal_create</object>
+      <object>objects\obj_portal_next_world</object>
     </objects>
     <objects name="gums">
       <object>objects\obj_bullet</object>

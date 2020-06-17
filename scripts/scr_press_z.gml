@@ -1,7 +1,7 @@
 state = ej.attack;
 
 if (gum = 1){
-    if (instance_number(obj_bullet)<3 and bullet != 0){
+    if (instance_number(obj_bullet)<3 and bullet != 0 and self.y < room_height and image_alpha>=1){
         //Amount shoot
         bullet -= 1;
         audio_play_sound(sd_shoot,1,false);
@@ -23,7 +23,7 @@ if (gum = 1){
     }
 }
 else if (gum = 2){
-    if (instance_number(obj_bullet)<5){
+    if (instance_number(obj_bullet)<5 and self.y < room_height and image_alpha>=1){
         //Amount shoot
         bullet_max -=1;
         audio_play_sound(sd_shoot,1,false);
@@ -40,7 +40,7 @@ else if (gum = 2){
     }
 }
 else if (gum = 3){
-    if (instance_number(obj_bullet)<1){
+    if (instance_number(obj_bullet)<1 and self.y < room_height and image_alpha>=1){
     audio_play_sound(sd_shoot,1,false);
     
         if dir = "right" {

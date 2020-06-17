@@ -35,6 +35,29 @@ room_to = 0;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>audio_play_sound(music_map123,1,true);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="2">
       <action>
         <libid>1</libid>
@@ -214,7 +237,7 @@ alarm[1] = 1;
    audio_stop_all();
    }
 alarm [0] = 12;
-audio_play_sound(music_map123,1,true);
+alarm[3] = 5;
 with(obj_fade_out) { instance_destroy();}
 can_play = false;
 </string>
