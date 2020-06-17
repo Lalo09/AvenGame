@@ -28,6 +28,8 @@
             <string>to_world = 1;
 next_room = "";
 can_play = false;
+//next_room = "";
+room_to = 0;
 </string>
           </argument>
         </arguments>
@@ -105,12 +107,15 @@ can_play = true;
 else if to_world = 2{
     path_start(path_map_w2,5,path_action_stop,false);
 }
+else if to_world = 3{
+    path_start(path_map_w3,5,path_action_stop,false);
+}
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="3" enumb="1">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -127,10 +132,10 @@ else if to_world = 2{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.live = 0
+            <string>if global.live &lt; 0
    {
    room_persistent = false;
-   room_goto(room_menu);
+   room_goto(room_to);
    }
 </string>
           </argument>
@@ -181,7 +186,7 @@ next_room = other.to_room;
             <kind>1</kind>
             <string>//alarm[1] = 28;
 //alarm[1] = 18;
-alarm[1] = 6;
+alarm[1] = 1;
 </string>
           </argument>
         </arguments>
@@ -204,7 +209,11 @@ alarm[1] = 6;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm [0] = 12;
+            <string>if global.live &lt;= 0
+   {
+   audio_stop_all();
+   }
+alarm [0] = 12;
 audio_play_sound(music_map123,1,true);
 with(obj_fade_out) { instance_destroy();}
 can_play = false;

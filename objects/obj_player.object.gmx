@@ -172,6 +172,7 @@ else if global.live = 0 {
     //global.coins = 0;
     //global.score1 = 0;
     //global.room_map1_per.room_persistent = false;
+    global.live -= 1;
     room_goto(room_game_over);    
 }
 </string>

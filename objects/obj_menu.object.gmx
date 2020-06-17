@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0.6;
+audio_stop_all();
 audio_play_sound(music_menu,1,true);
 </string>
           </argument>

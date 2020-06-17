@@ -18,7 +18,7 @@
 if global.live = 3 {
     room_persistent = true;
 }*/</code>
-  <enableViews>0</enableViews>
+  <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>0</clearDisplayBuffer>
   <makerSettings>
@@ -48,7 +48,7 @@ if global.live = 3 {
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -60,9 +60,9 @@ if global.live = 3 {
   <instances>
     <instance objName="obj_world_map" x="160" y="240" name="inst_19E59956" locked="0" code="world = 2;&#xA;to_room = room_test ;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_world_map" x="400" y="208" name="inst_DBD974FA" locked="0" code="world = 3;&#xA;to_room = room_test3 ;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_world_map" x="496" y="368" name="inst_C77F4A6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_world_map" x="496" y="368" name="inst_C77F4A6C" locked="0" code="world = 4;&#xA;to_room = room_test4 ;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_draw_score" x="128" y="16" name="inst_548F65E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player_map" x="160" y="128" name="inst_7E78568A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player_map" x="160" y="128" name="inst_7E78568A" locked="0" code="//next_room = room_menu;&#xA;room_to=room_menu;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tiles_map" x="64" y="64" w="16" h="16" xo="304" yo="192" id="10001511" name="inst_B4321BA2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

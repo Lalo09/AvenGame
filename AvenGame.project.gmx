@@ -130,6 +130,7 @@
     <paths name="worlds">
       <path>paths\path_map_w1</path>
       <path>paths\path_map_w2</path>
+      <path>paths\path_map_w3</path>
     </paths>
   </paths>
   <scripts name="scripts">
@@ -230,6 +231,7 @@
       <room>rooms\room_test</room>
       <room>rooms\room_test2</room>
       <room>rooms\room_test3</room>
+      <room>rooms\room_test4</room>
     </rooms>
   </rooms>
   <help>
