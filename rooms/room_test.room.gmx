@@ -99,7 +99,6 @@ audio_play_sound(music_city,1,true);</code>
     <instance objName="obj_mask" x="32" y="384" name="inst_2E67BFA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mask" x="64" y="384" name="inst_711DAC67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mask" x="96" y="384" name="inst_3099B22A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mask" x="128" y="384" name="inst_A6B78605" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mask" x="160" y="384" name="inst_CD8484FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mask" x="192" y="384" name="inst_331E56E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mask" x="224" y="384" name="inst_796F3A21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -281,6 +280,7 @@ audio_play_sound(music_city,1,true);</code>
     <tile bgName="tiles_bricks" x="704" y="224" w="32" h="32" xo="162" yo="162" id="10002739" name="inst_BA1EBF37" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_bricks" x="704" y="256" w="32" h="32" xo="162" yo="162" id="10002740" name="inst_93371AC7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_bricks" x="960" y="224" w="32" h="32" xo="226" yo="98" id="10002741" name="inst_A1F4A2D2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles_bricks" x="128" y="352" w="32" h="32" xo="130" yo="98" id="10002801" name="inst_6E55032E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

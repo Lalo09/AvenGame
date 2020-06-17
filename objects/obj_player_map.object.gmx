@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>to_world = 1;
 next_room = "";
+can_play = false;
 </string>
           </argument>
         </arguments>
@@ -72,9 +73,10 @@ next_room = "";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(sd_select,1,false);
-instance_create(0,0,obj_fade_out);
-alarm[2]=12;
+            <string>//audio_play_sound(sd_select,1,false);
+//instance_create(0,0,obj_fade_out);
+//alarm[2]=12;
+can_play = true;
 </string>
           </argument>
         </arguments>
@@ -150,7 +152,9 @@ next_room = other.to_room;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[1] = 28;
+            <string>//alarm[1] = 28;
+//alarm[1] = 18;
+alarm[1] = 6;
 </string>
           </argument>
         </arguments>
@@ -173,8 +177,10 @@ next_room = other.to_room;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm [0] = 25;
+            <string>alarm [0] = 12;
 audio_play_sound(music_map123,1,true);
+with(obj_fade_out) { instance_destroy();}
+can_play = false;
 </string>
           </argument>
         </arguments>
@@ -201,8 +207,40 @@ audio_play_sound(music_map123,1,true);
 draw_set_font(font_main);
 draw_set_colour(make_colour_rgb(201, 201, 201));
 draw_text(view_xview[0] + 225, view_yview[0] + top, "World ");
+if to_world = 1 {
 draw_text(view_xview[0] + 340, view_yview[0] + top, to_world );
+}
+else{
+draw_text(view_xview[0] + 340, view_yview[0] + top, to_world - 1);
+}
 draw_sprite(spr_player_map,0-2,self.x,self.y);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="88">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if can_play = true{
+audio_play_sound(sd_select,1,false);
+instance_create(0,0,obj_fade_out);
+alarm[2]=12;
+}
 </string>
           </argument>
         </arguments>
