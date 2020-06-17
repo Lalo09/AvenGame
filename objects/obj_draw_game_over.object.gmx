@@ -49,7 +49,7 @@ audio_play_sound(sd_game_over,1,false);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(room_menu);
+            <string>room_goto(room_map1);
 </string>
           </argument>
         </arguments>

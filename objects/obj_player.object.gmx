@@ -127,14 +127,16 @@ butctr = 0;
           <argument>
             <kind>1</kind>
             <string>//restart Game
+/**
 global.healths = 8;
 global.live = 3;
 global.coins = 0;
 global.score1 = 0;
 //room_set_persistent( room_map1,false );
 //room_map1.room_persistent = false;
-global.restart = true;
 room_goto(room_menu);
+*/
+//game_restart();
 </string>
           </argument>
         </arguments>
@@ -165,10 +167,11 @@ if global.live &gt; 0 {
     global.healths = 8;
 }
 else if global.live = 0 {
-    global.healths = 8;
-    global.live = 3;
-    global.coins = 0;
-    global.score1 = 0;
+    //global.healths = 8;
+    //global.live = 3;
+    //global.coins = 0;
+    //global.score1 = 0;
+    //global.room_map1_per.room_persistent = false;
     room_goto(room_game_over);    
 }
 </string>
