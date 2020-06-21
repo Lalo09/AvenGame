@@ -74,6 +74,7 @@
       <sprite>sprites\spr_bullet</sprite>
       <sprite>sprites\spr_bullet_mega</sprite>
       <sprite>sprites\spr_bullet_max</sprite>
+      <sprite>sprites\sprite_bullet_mega</sprite>
       <sprite>sprites\spr_bullet_mega_brick</sprite>
       <sprite>sprites\spr_effect_fly</sprite>
       <sprite>sprites\spr_effect_inmunity</sprite>
@@ -113,9 +114,10 @@
       <sprite>sprites\spr_info</sprite>
     </sprites>
     <sprites name="enemies">
-      <sprites name="pink monster">
-        <sprite>sprites\spr_monster_pink_walk</sprite>
-      </sprites>
+      <sprite>sprites\spr_bomb</sprite>
+      <sprite>sprites\spr_enemy_1</sprite>
+      <sprite>sprites\spr_ske_walk</sprite>
+      <sprite>sprites\spr_ske_attack</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -196,6 +198,7 @@
       <object>objects\obj_bullet_max</object>
       <object>objects\obj_bullet_mega</object>
       <object>objects\obj_bullet_brick</object>
+      <object>objects\obj_bullet_mega_2</object>
     </objects>
     <objects name="extra">
       <object>objects\obj_effect_fly</object>
@@ -212,6 +215,7 @@
     </objects>
     <objects name="enemies">
       <object>objects\obj_enemy_parent</object>
+      <object>objects\obj_bomb</object>
     </objects>
     <objects name="map">
       <object>objects\obj_player_map</object>

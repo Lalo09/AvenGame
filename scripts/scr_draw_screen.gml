@@ -64,6 +64,7 @@ switch(obj_player.bullet){
     case 14: draw_sprite(spr_bar_shoot,2,view_xview[0]+2, view_yview[0] + 48); break;
     case 15: draw_sprite(spr_bar_shoot,1,view_xview[0]+2, view_yview[0] + 48); break;
     case 16: draw_sprite(spr_bar_shoot,0,view_xview[0]+2, view_yview[0] + 48); break;
+    default: draw_sprite(spr_bar_shoot,0,view_xview[0]+2, view_yview[0] + 48); break;
     
 }   
 
