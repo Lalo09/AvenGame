@@ -113,6 +113,7 @@
       <sprite>sprites\spr_enemy_1</sprite>
       <sprite>sprites\spr_ske_walk</sprite>
       <sprite>sprites\spr_ske_attack</sprite>
+      <sprite>sprites\spr_bomb_brick</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -206,10 +207,13 @@
       <object>objects\obj_fade_out</object>
       <object>objects\obj_player_game_over</object>
       <object>objects\obj_draw_game_over</object>
+      <object>objects\obj_destroy</object>
     </objects>
     <objects name="enemies">
       <object>objects\obj_enemy_parent</object>
       <object>objects\obj_bomb</object>
+      <object>objects\obj_boom_brick</object>
+      <object>objects\obj_boom_creater</object>
     </objects>
     <objects name="map">
       <object>objects\obj_player_map</object>

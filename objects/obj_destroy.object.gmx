@@ -3,7 +3,7 @@
   <spriteName>spr_effect_destroy</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-3</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(sd_shoot_end,1,false);
-image_speed = 0.4;
+            <string>image_speed = 0.5;
 </string>
           </argument>
         </arguments>
