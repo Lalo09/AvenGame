@@ -1,4 +1,3 @@
-
 switch(dir){
     case "left":
         sprite_index = spr_player_quiet_left;

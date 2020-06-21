@@ -42,14 +42,7 @@ else if (gum = 2){
 else if (gum = 3){
     if (instance_number(obj_bullet)<1 and self.y < room_height and image_alpha>=1){
     audio_play_sound(sd_shoot,1,false);
-    
-        /**if dir = "right" {
-            instance_create(obj_player.x+10,obj_player.y-35,obj_bullet_mega);
-        }
-        else{
-            instance_create(obj_player.x-10,obj_player.y-35,obj_bullet_mega);
-        }*/
-        for(i = 0; i < 14; i += 1){
+    for(i = 0; i < 14; i += 1){
             instance_create(self.x,self.y,obj_bullet_brick);
         }
     }

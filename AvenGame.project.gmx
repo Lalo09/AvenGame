@@ -64,7 +64,6 @@
       <sprite>sprites\spr_skull</sprite>
     </sprites>
     <sprites name="effects">
-      <sprite>sprites\spr_kill</sprite>
       <sprite>sprites\spr_bullet_end</sprite>
       <sprite>sprites\spr_effect_take_item</sprite>
       <sprite>sprites\spr_effect_destroy</sprite>
@@ -74,10 +73,7 @@
       <sprite>sprites\spr_bullet</sprite>
       <sprite>sprites\spr_bullet_mega</sprite>
       <sprite>sprites\spr_bullet_max</sprite>
-      <sprite>sprites\sprite_bullet_mega</sprite>
       <sprite>sprites\spr_bullet_mega_brick</sprite>
-      <sprite>sprites\spr_effect_fly</sprite>
-      <sprite>sprites\spr_effect_inmunity</sprite>
       <sprites name="screen">
         <sprite>sprites\spr_coin_screen</sprite>
         <sprite>sprites\spr_health_bar</sprite>
@@ -111,7 +107,6 @@
     <sprites name="menu">
       <sprite>sprites\spr_buttom</sprite>
       <sprite>sprites\spr_menu_bar</sprite>
-      <sprite>sprites\spr_info</sprite>
     </sprites>
     <sprites name="enemies">
       <sprite>sprites\spr_bomb</sprite>
@@ -198,7 +193,6 @@
       <object>objects\obj_bullet_max</object>
       <object>objects\obj_bullet_mega</object>
       <object>objects\obj_bullet_brick</object>
-      <object>objects\obj_bullet_mega_2</object>
     </objects>
     <objects name="extra">
       <object>objects\obj_effect_fly</object>
