@@ -76,7 +76,7 @@ alarm[0]=room_speed;
           <argument>
             <kind>1</kind>
             <string>if !instance_exists(obj_draw_game_over){
-instance_create(0,0,obj_fade_in2);
+instance_create(view_xview[0],view_yview[0],obj_fade_in2);
 }
 </string>
           </argument>

@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0.8;
+vspeed = 0;
+hspeed = 0;
+gravity = 0;
 </string>
           </argument>
         </arguments>

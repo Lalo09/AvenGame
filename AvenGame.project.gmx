@@ -111,7 +111,8 @@
     <sprites name="enemies">
       <sprite>sprites\spr_bomb</sprite>
       <sprite>sprites\spr_enemy_1</sprite>
-      <sprite>sprites\spr_ske_walk</sprite>
+      <sprite>sprites\spr_ske_walk_right</sprite>
+      <sprite>sprites\spr_ske_walk_left</sprite>
       <sprite>sprites\spr_ske_attack</sprite>
       <sprite>sprites\spr_bomb_brick</sprite>
     </sprites>
@@ -214,6 +215,7 @@
       <object>objects\obj_bomb</object>
       <object>objects\obj_boom_brick</object>
       <object>objects\obj_boom_creater</object>
+      <object>objects\obj_enemy_skull</object>
     </objects>
     <objects name="map">
       <object>objects\obj_player_map</object>
@@ -232,12 +234,14 @@
       <room>rooms\room_menu</room>
       <room>rooms\room_game_over</room>
     </rooms>
-    <rooms name="rooms world 1">
+    <rooms name="rooms levels">
       <room>rooms\room_map1</room>
-      <room>rooms\room_test</room>
-      <room>rooms\room_test2</room>
-      <room>rooms\room_test3</room>
-      <room>rooms\room_test4</room>
+      <rooms name="w1">
+        <room>rooms\room_test</room>
+        <room>rooms\room_test2</room>
+        <room>rooms\room_test3</room>
+        <room>rooms\room_test4</room>
+      </rooms>
     </rooms>
   </rooms>
   <help>
