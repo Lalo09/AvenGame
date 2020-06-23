@@ -215,7 +215,6 @@
       <object>objects\obj_bomb</object>
       <object>objects\obj_boom_brick</object>
       <object>objects\obj_boom_creater</object>
-      <object>objects\obj_enemy_skull</object>
     </objects>
     <objects name="map">
       <object>objects\obj_player_map</object>

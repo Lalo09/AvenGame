@@ -30,6 +30,7 @@ global.live = 3;
 global.coins = 0;
 global.score1 = 0;
 alarm[0]=room_speed;
+global.frec_boom = 9;
 </string>
           </argument>
         </arguments>

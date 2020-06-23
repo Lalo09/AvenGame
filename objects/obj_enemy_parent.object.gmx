@@ -49,12 +49,12 @@ give_score = 250;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if healths = 0 {
-    instance_change(obj_kill_enemy,true);
-    audio_play_sound(sd_kill_enemy,1,false);
-    global.score1 += give_score;
-}
-
+            <string>//if healths = 0 {
+   // instance_change(obj_kill_enemy,true);
+    //audio_play_sound(sd_kill_enemy,1,false);
+    //global.score1 += give_score;
+//}
+healths -= 1;
 </string>
           </argument>
         </arguments>

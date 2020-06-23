@@ -81,7 +81,13 @@ image_speed = 0.8;
 
 if other.healths &gt; 0{
     other.healths -= 1;
-   other.alarm[0] = room_speed;
+}
+else if other.healths = 0 {
+    with(other){
+        instance_change(obj_kill_enemy,true);
+        audio_play_sound(sd_kill_enemy,1,false);
+    }
+    global.score1 += other.give_score;
 }
 </string>
           </argument>
