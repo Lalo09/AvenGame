@@ -112,7 +112,6 @@
       <sprite>sprites\spr_bomb</sprite>
       <sprite>sprites\spr_enemy_1</sprite>
       <sprite>sprites\spr_ske_walk_right</sprite>
-      <sprite>sprites\spr_ske_walk_left</sprite>
       <sprite>sprites\spr_ske_attack</sprite>
       <sprite>sprites\spr_bomb_brick</sprite>
     </sprites>
@@ -215,6 +214,7 @@
       <object>objects\obj_bomb</object>
       <object>objects\obj_boom_brick</object>
       <object>objects\obj_boom_creater</object>
+      <object>objects\obj_skull_enemy</object>
     </objects>
     <objects name="map">
       <object>objects\obj_player_map</object>

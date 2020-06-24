@@ -25,17 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if obj_player.down = 0 then
-{
-    if obj_player.bbox_bottom &gt; bbox_top {
-        solid = false;
+            <string>if instance_exists(obj_player){
+    if obj_player.down = 0 then
+    {
+        if obj_player.bbox_bottom &gt; bbox_top {
+            solid = false;
+        }
+        else{
+            solid = true;
+        }
     }
     else{
-        solid = true;
+        exit;
     }
-}
-else{
-    exit;
 }
 </string>
           </argument>
