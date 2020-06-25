@@ -52,7 +52,7 @@ image_speed = 0.5;
           <argument>
             <kind>1</kind>
             <string>instance_change(obj_destroy_item,true);
-for(i = 0; i &lt; 12; i += 1){
+for(i = 0; i &lt; 6; i += 1){
     instance_create(self.x,self.y,obj_boom_brick);
 }
 </string>
@@ -78,7 +78,7 @@ for(i = 0; i &lt; 12; i += 1){
           <argument>
             <kind>1</kind>
             <string>instance_change(obj_destroy_item,true);
-for(i = 0; i &lt; 12; i += 1){
+for(i = 0; i &lt; 6; i += 1){
     instance_create(self.x,self.y,obj_boom_brick);
 }
 </string>

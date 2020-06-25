@@ -25,13 +25,38 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>healths = 12;
+            <string>healths = 14;
 give_score = 300;
 vel = 2.5;
 sprite = spr_ske_walk_right;
 
 dir = 1;
 right = vel;
+left = -vel
+hspeed = choose(right,left);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>right = vel;
 left = -vel
 hspeed = choose(right,left);
 </string>
@@ -56,7 +81,34 @@ hspeed = choose(right,left);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if dir = 1 {
+            <string>if distance_to_object(obj_player) &lt; 15 {
+    if self.x &lt; obj_player.x{
+        sprite_index = spr_ske_attack;
+        image_speed = 0.6;
+        image_xscale = 1;
+        hspeed = right;
+        //hspeed=0;
+        //if alarm[5] == - 1 {alarm[5] = 8;}
+        //alarm[5] = 8;
+    }
+    else if self.x &gt;= obj_player.x{
+        sprite_index = spr_ske_attack;
+        image_speed = 0.6;
+        image_xscale = -1;
+        hspeed = left;
+        //hspeed = 0;
+        //if alarm[5] == - 1 {alarm[5] = 8;}
+        //alarm[5] = 8;
+    }
+    if place_free (x,y+1){
+        gravity = 1;
+    }
+    else{
+        gravity = 0;
+    }
+}
+else if distance_to_object(obj_player) &gt;= 16 {
+if dir = 1 {
     sprite_index = sprite;
     image_speed = 0.4;
     image_xscale = 1;
@@ -66,27 +118,42 @@ else{
     image_speed = 0.4;
     image_xscale = -1;
 }
+if place_free (x,y+1){
+        gravity = 1;
+    }
+    else{
+        gravity = 0;
+    }
+}
 
-if not place_free(x+20,y) or place_free(x+40,y+32){
+if not place_free(x+18,y) or place_free(x+18,y+32){
     hspeed = left;
     dir = 0;
 }
-if not place_free(x-20,y)  or place_free(x-40,y+32){
+if not place_free(x-18,y)  or place_free(x-18,y+32){
     hspeed = right;
     dir = 1;
 }
 
-if place_free (x,y+1){
-    gravity = 1;
-}
-else{
-    gravity = 0;
-}
 if hspeed = right {
     dir = 1;
 }
 if hspeed = left {
     dir = 0;
+}
+
+if vspeed &gt; 0 {
+vspeed = 12;
+    if dir = 1 {
+    sprite_index = sprite;
+    image_speed = 0;
+    image_xscale = 1;
+}
+else{
+    sprite_index = sprite;
+    image_speed = 0;
+    image_xscale = -1;
+}
 }
 </string>
           </argument>
