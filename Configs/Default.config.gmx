@@ -219,7 +219,7 @@
     <option_freeze>false</option_freeze>
     <option_frequency>0</option_frequency>
     <option_frontimage>nil</option_frontimage>
-    <option_fullscreen>True</option_fullscreen>
+    <option_fullscreen>False</option_fullscreen>
     <option_gameguid>{A982CD8C-E929-4A79-9D3D-2C3E4F50F9A1}</option_gameguid>
     <option_gameid>290029163</option_gameid>
     <option_haptic_effects>0</option_haptic_effects>

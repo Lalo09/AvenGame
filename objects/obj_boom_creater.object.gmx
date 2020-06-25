@@ -50,7 +50,7 @@
             <kind>1</kind>
             <string>num = irandom(interval);
 
-if num &gt; 3 and num &lt; 6 {
+if num &gt; 3 and num &lt; 5 {
     instance_create(view_xview[0]+irandom_range(35,620),view_yview[0]-40,obj_bomb);
 }
 </string>

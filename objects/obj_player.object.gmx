@@ -415,8 +415,9 @@ if(inmunity = 0){
             alarm[2]=1*room_speed;
             //instance_create(self.x,self.y,obj_damage);
         }
-        instance_create(self.x,self.y,obj_damage);
+        //instance_create(self.x,self.y,obj_damage);
     }
+    instance_create(self.x,self.y,obj_damage);
 }
 </string>
           </argument>
@@ -456,8 +457,9 @@ if(inmunity = 0){
             alarm[2]=1*room_speed;
             //instance_create(self.x,self.y,obj_damage);
         }
-        instance_create(self.x,self.y,obj_damage);
+    
     }
+    instance_create(self.x,self.y,obj_damage);
 }
 </string>
           </argument>

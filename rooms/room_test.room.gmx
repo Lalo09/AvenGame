@@ -170,11 +170,11 @@ audio_play_sound(music_city,1,true);</code>
     <instance objName="obj_platform_false" x="352" y="416" name="inst_8DC5A7D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_platform_false" x="384" y="416" name="inst_02D01E18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_platform_false" x="416" y="416" name="inst_73297C09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_platform_false" x="480" y="352" name="inst_EA5A56FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_platform_false" x="512" y="352" name="inst_F6C24C48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_platform_false" x="544" y="352" name="inst_E47D5C8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_platform_false" x="1504" y="320" name="inst_183FF85B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_platform_false" x="1536" y="320" name="inst_260E257B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_platform_false" x="448" y="352" name="inst_EA5A56FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_platform_false" x="480" y="352" name="inst_F6C24C48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_platform_false" x="512" y="352" name="inst_E47D5C8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_platform_false" x="1472" y="320" name="inst_183FF85B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_platform_false" x="1504" y="320" name="inst_260E257B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_platform_false" x="1088" y="288" name="inst_1983528C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_platform_false" x="1120" y="288" name="inst_B770EF3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_platform_false" x="2272" y="384" name="inst_B8088C25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -267,8 +267,8 @@ audio_play_sound(music_city,1,true);</code>
     <instance objName="obj_box_items" x="2144" y="416" name="inst_6318CD67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box_items" x="3264" y="352" name="inst_197B6756" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mask" x="928" y="416" name="inst_525D4338" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_skull_enemy" x="1344" y="352" name="inst_DEDFF85E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_skull_enemy" x="704" y="384" name="inst_1A165F2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_skull_enemy" x="1312" y="352" name="inst_DEDFF85E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_skull_enemy" x="736" y="352" name="inst_1A165F2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_skull_enemy" x="1664" y="256" name="inst_A286418E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_skull_enemy" x="1824" y="256" name="inst_C0141AFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_skull_enemy" x="2560" y="448" name="inst_FF1AE946" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -298,8 +298,8 @@ audio_play_sound(music_city,1,true);</code>
     <instance objName="obj_mask" x="1120" y="352" name="inst_B02131D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mask" x="1120" y="384" name="inst_510BB145" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mask" x="1088" y="384" name="inst_00BE2EF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mask" x="1504" y="384" name="inst_2857D984" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mask" x="1536" y="384" name="inst_0999D811" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mask" x="1472" y="384" name="inst_2857D984" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mask" x="1504" y="384" name="inst_0999D811" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mask" x="2272" y="448" name="inst_508F8600" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mask" x="2304" y="448" name="inst_604AECF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mask" x="2336" y="448" name="inst_827E9870" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -569,7 +569,7 @@ audio_play_sound(music_city,1,true);</code>
     <tile bgName="tiles_city" x="1440" y="608" w="32" h="32" xo="160" yo="416" id="10003261" name="inst_5157DDF1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_city" x="1440" y="576" w="32" h="32" xo="160" yo="416" id="10003262" name="inst_DB94CA19" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_city" x="1088" y="288" w="64" h="64" xo="224" yo="384" id="10003264" name="inst_00085751" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tiles_city" x="1504" y="320" w="64" h="64" xo="224" yo="384" id="10003265" name="inst_9F404519" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles_city" x="1472" y="320" w="64" h="64" xo="224" yo="384" id="10003265" name="inst_9F404519" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_city" x="1952" y="480" w="32" h="32" xo="192" yo="416" id="10003281" name="inst_D8809F6A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_city" x="1952" y="512" w="32" h="32" xo="192" yo="416" id="10003282" name="inst_38F68F98" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_city" x="1952" y="544" w="32" h="32" xo="192" yo="416" id="10003283" name="inst_187A3FBE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1213,9 +1213,9 @@ audio_play_sound(music_city,1,true);</code>
     <tile bgName="tiles_city" x="352" y="416" w="32" h="32" xo="161" yo="193" id="10004156" name="inst_0A5D1B8D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_city" x="384" y="416" w="32" h="32" xo="161" yo="193" id="10004157" name="inst_32B24BF8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_city" x="416" y="416" w="32" h="32" xo="161" yo="193" id="10004158" name="inst_592BB6CD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tiles_city" x="480" y="352" w="32" h="32" xo="161" yo="192" id="10004165" name="inst_78CAEE07" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tiles_city" x="512" y="352" w="32" h="32" xo="161" yo="192" id="10004166" name="inst_B9941C90" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tiles_city" x="544" y="352" w="32" h="32" xo="161" yo="192" id="10004167" name="inst_D8735AD7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles_city" x="448" y="352" w="32" h="32" xo="161" yo="192" id="10004165" name="inst_78CAEE07" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles_city" x="480" y="352" w="32" h="32" xo="161" yo="192" id="10004166" name="inst_B9941C90" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles_city" x="512" y="352" w="32" h="32" xo="161" yo="192" id="10004167" name="inst_D8735AD7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_city" x="576" y="416" w="32" h="32" xo="161" yo="192" id="10004168" name="inst_56A4505E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_city" x="608" y="416" w="32" h="32" xo="161" yo="192" id="10004169" name="inst_A3288784" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_city" x="640" y="416" w="32" h="32" xo="161" yo="192" id="10004170" name="inst_3C42C017" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1224,10 +1224,10 @@ audio_play_sound(music_city,1,true);</code>
     <tile bgName="tiles_city" x="736" y="416" w="32" h="32" xo="161" yo="192" id="10004173" name="inst_4C732DEF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_city" x="768" y="416" w="32" h="32" xo="161" yo="192" id="10004174" name="inst_757BCC96" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_city" x="800" y="416" w="32" h="32" xo="161" yo="192" id="10004175" name="inst_39920A7B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tiles_city" x="512" y="384" w="32" h="32" xo="225" yo="224" id="10004180" name="inst_0BDE41A8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tiles_city" x="512" y="416" w="32" h="32" xo="225" yo="256" id="10004182" name="inst_17C24F49" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tiles_city" x="512" y="448" w="32" h="32" xo="225" yo="256" id="10004183" name="inst_4DC6749C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tiles_city" x="512" y="480" w="32" h="32" xo="225" yo="256" id="10004184" name="inst_AAA8B05C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles_city" x="480" y="384" w="32" h="32" xo="225" yo="224" id="10004180" name="inst_0BDE41A8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles_city" x="480" y="416" w="32" h="32" xo="225" yo="256" id="10004182" name="inst_17C24F49" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles_city" x="480" y="448" w="32" h="32" xo="225" yo="256" id="10004183" name="inst_4DC6749C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles_city" x="480" y="480" w="32" h="32" xo="225" yo="256" id="10004184" name="inst_AAA8B05C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_city" x="640" y="480" w="32" h="32" xo="225" yo="256" id="10004185" name="inst_2FD8A19F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_city" x="640" y="512" w="32" h="32" xo="225" yo="256" id="10004186" name="inst_56A4D888" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_city" x="640" y="576" w="32" h="32" xo="225" yo="256" id="10004187" name="inst_B87C9B4C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1364,8 +1364,8 @@ audio_play_sound(music_city,1,true);</code>
     <tile bgName="tiles_city" x="1952" y="416" w="32" h="32" xo="193" yo="416" id="10004352" name="inst_3E1C7438" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_city" x="640" y="672" w="32" h="32" xo="225" yo="256" id="10004353" name="inst_BDA8A22B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_city" x="736" y="672" w="32" h="32" xo="321" yo="256" id="10004354" name="inst_EBAA852F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tiles_bricks" x="1536" y="384" w="32" h="32" xo="0" yo="65" id="10004397" name="inst_F687E76B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tiles_bricks" x="1504" y="384" w="32" h="32" xo="0" yo="65" id="10004398" name="inst_45DC270D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles_bricks" x="1504" y="384" w="32" h="32" xo="0" yo="65" id="10004397" name="inst_F687E76B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles_bricks" x="1472" y="384" w="32" h="32" xo="0" yo="65" id="10004398" name="inst_45DC270D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_bricks" x="1120" y="352" w="32" h="32" xo="0" yo="65" id="10004399" name="inst_428FF494" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_bricks" x="1088" y="352" w="32" h="32" xo="0" yo="65" id="10004400" name="inst_41A96934" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_bricks" x="1088" y="384" w="32" h="32" xo="0" yo="65" id="10004401" name="inst_E8A77D15" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
