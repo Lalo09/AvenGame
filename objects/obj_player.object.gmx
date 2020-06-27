@@ -441,25 +441,25 @@ if(inmunity = 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if(inmunity = 0){
-if(alarm[2] == -1) {
-alarm[2]=1*room_speed;
-//instance_create(self.x,self.y,obj_damage);
-}
-
-}instance_create(self.x,self.y,obj_damage);*/
-if(inmunity = 0){
+            <string>if(inmunity = 0){
+    instance_create(self.x,self.y,obj_damage);
     if global.healths = 0  {
         global.healths = global.healths - 1 ;
     }
-    else{
-        if(alarm[2] == -1) {
+    else if(alarm[2] == -1) {
             alarm[2]=1*room_speed;
-            //instance_create(self.x,self.y,obj_damage);
-        }
-    
     }
-    instance_create(self.x,self.y,obj_damage);
+    
+    if self.x &lt; other.x {
+        place_free(x-8,y) {
+            self.x -= 6;            
+        }                
+    }
+    else if self.x &gt;= other.x{
+        if place_free(x+8,y){
+            self.x += 6;
+        }
+    }
 }
 </string>
           </argument>

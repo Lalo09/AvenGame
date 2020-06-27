@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>healths = 14;
+            <string>healths = 10;
 give_score = 300;
 vel = 2.5;
 sprite = spr_ske_walk_right;
@@ -84,7 +84,7 @@ hspeed = choose(right,left);
             <string>if distance_to_object(obj_player) &lt; 15 {
     if self.x &lt; obj_player.x{
         sprite_index = spr_ske_attack;
-        image_speed = 0.6;
+        image_speed = 0.7;
         image_xscale = 1;
         hspeed = right;
         //hspeed=0;
@@ -93,7 +93,7 @@ hspeed = choose(right,left);
     }
     else if self.x &gt;= obj_player.x{
         sprite_index = spr_ske_attack;
-        image_speed = 0.6;
+        image_speed = 0.7;
         image_xscale = -1;
         hspeed = left;
         //hspeed = 0;

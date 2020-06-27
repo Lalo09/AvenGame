@@ -114,6 +114,7 @@
       <sprite>sprites\spr_ske_walk_right</sprite>
       <sprite>sprites\spr_ske_attack</sprite>
       <sprite>sprites\spr_bomb_brick</sprite>
+      <sprite>sprites\spr_ske_bullet</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -215,6 +216,8 @@
       <object>objects\obj_boom_brick</object>
       <object>objects\obj_boom_creater</object>
       <object>objects\obj_skull_enemy</object>
+      <object>objects\obj_skull_enemy_hard</object>
+      <object>objects\obj_skull_bullet</object>
     </objects>
     <objects name="map">
       <object>objects\obj_player_map</object>
@@ -230,6 +233,7 @@
   <rooms name="rooms">
     <rooms name="rooms initial">
       <room>rooms\room_variables</room>
+      <room>rooms\rm_test</room>
       <room>rooms\room_menu</room>
       <room>rooms\room_game_over</room>
     </rooms>

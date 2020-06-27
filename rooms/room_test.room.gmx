@@ -268,7 +268,6 @@ audio_play_sound(music_city,1,true);</code>
     <instance objName="obj_box_items" x="3264" y="352" name="inst_197B6756" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mask" x="928" y="416" name="inst_525D4338" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_skull_enemy" x="1312" y="352" name="inst_DEDFF85E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_skull_enemy" x="736" y="352" name="inst_1A165F2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_skull_enemy" x="1664" y="256" name="inst_A286418E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_skull_enemy" x="1824" y="256" name="inst_C0141AFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_skull_enemy" x="2560" y="448" name="inst_FF1AE946" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -310,7 +309,7 @@ audio_play_sound(music_city,1,true);</code>
     <instance objName="obj_mask" x="4960" y="288" name="inst_319C0BDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mask" x="4960" y="320" name="inst_A6DE21F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mask" x="4928" y="320" name="inst_45C92270" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_boom_creater" x="0" y="0" name="inst_1262DAE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_skull_enemy" x="672" y="384" name="inst_11EB7104" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="&lt;undefined&gt;" x="96" y="96" w="32" h="32" xo="608" yo="0" id="10000546" name="inst_89E729EF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
