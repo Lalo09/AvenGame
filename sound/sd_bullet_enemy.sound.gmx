@@ -2,10 +2,10 @@
 <sound>
   <kind>0</kind>
   <extension>.wav</extension>
-  <origname>sound\audio\sd_hurt_player.wav</origname>
+  <origname>sound\audio\sd_bullet_enemy.wav</origname>
   <effects>0</effects>
   <volume>
-    <volume>0.61</volume>
+    <volume>0.28</volume>
   </volume>
   <pan>0</pan>
   <bitRates>
@@ -21,7 +21,7 @@
     <bitDepth>16</bitDepth>
   </bitDepths>
   <preload>-1</preload>
-  <data>sd_hurt_player.wav</data>
+  <data>sd_bullet_enemy.wav</data>
   <compressed>0</compressed>
   <streamed>0</streamed>
   <uncompressOnLoad>0</uncompressOnLoad>
