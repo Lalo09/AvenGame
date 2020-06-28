@@ -20,6 +20,7 @@
       <sound>sound\sd_select</sound>
       <sound>sound\sd_game_over</sound>
       <sound>sound\sd_win</sound>
+      <sound>sound\sd_death_2</sound>
     </sounds>
     <sounds name="music">
       <sound>sound\music_menu</sound>
@@ -123,6 +124,7 @@
         <sprite>sprites\spr_totem_brown</sprite>
         <sprite>sprites\spr_totem_bullet</sprite>
       </sprites>
+      <sprite>sprites\spr_guardian</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -235,6 +237,7 @@
         <object>objects\obj_totem_brown</object>
         <object>objects\obj_ball_totem</object>
       </objects>
+      <object>objects\obj_guardian</object>
     </objects>
     <objects name="map">
       <object>objects\obj_player_map</object>

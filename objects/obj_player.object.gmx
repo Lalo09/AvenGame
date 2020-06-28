@@ -93,6 +93,56 @@ butctr = 0;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="8">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>state = ej.quiet;
+alarm[4] = 200;
+//alarm[6] = 2 * room_speed;
+audio_play_sound(sd_death_2,1,false);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/*audio_stop_all(); 
+audio_play_sound(sd_death,1,false);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="6">
       <action>
         <libid>1</libid>
@@ -360,10 +410,11 @@ if (inmunity = 1){
 }
 
 if global.healths = 0{
-    instance_deactivate_all(true);    
+    instance_deactivate_all(true);   
+    //if alarm[7] == -1 { alarm[7] = 2; }
 }
 
-if global.healths &gt; 0 {
+if global.live &lt; 0 {
     if dir = "right" {
         sprite_index = spr_player_death_right;
         image_speed = 0.5;
@@ -373,7 +424,6 @@ if global.healths &gt; 0 {
         image_speed = 0.5;
     }
 }
-
 script_execute(state);
 </string>
           </argument>
@@ -451,12 +501,12 @@ if(inmunity = 0){
     }
     
     if self.x &lt; other.x {
-        place_free(x-8,y) {
+        if place_free(x-16,y+32) or  place_free(x-48,y-32) {
             self.x -= 6;            
         }                
     }
-    else if self.x &gt;= other.x{
-        if place_free(x+8,y){
+    if self.x &gt; other.x{
+        if place_free(x+16,y){
             self.x += 6;
         }
     }
@@ -964,10 +1014,8 @@ state = ej.quiet
             <kind>1</kind>
             <string>if obj_player.y &gt; view_yview[view_current]+8{
 audio_stop_all();
-state = ej.quiet;
-alarm[4] = 8 * room_speed;
-//alarm[6] = 2 * room_speed;
 audio_play_sound(sd_death,1,false);
+alarm[8] = 32;
 }
 </string>
           </argument>
