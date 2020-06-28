@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 60;
+            <string>alarm[0] = 300;
 audio_play_sound(sd_game_over,1,false);
 </string>
           </argument>

@@ -25,10 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>num = irandom(interval);
-
-if num &gt; 3 and num &lt; 6 {
-    instance_create(view_xview[0]+700,view_yview[0]+irandom_range(35,470),obj_bullet_enemy);
+            <string>if instance_exists(obj_player) and obj_player.y &lt;= view_yview[0]+500{
+    num = irandom(interval);
+    
+    if num &gt; 3 and num &lt; 6 {
+        instance_create(view_xview[0]+700,view_yview[0]+irandom_range(35,470),obj_bullet_enemy);
+    }
 }
 </string>
           </argument>

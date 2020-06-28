@@ -127,6 +127,11 @@
       </sprites>
       <sprite>sprites\spr_guardian</sprite>
       <sprite>sprites\spr_bullet_enemy</sprite>
+      <sprites name="mega">
+        <sprite>sprites\spr_mega_quiet</sprite>
+        <sprite>sprites\spr_mega_attack</sprite>
+        <sprite>sprites\spr_mega_bullet</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -245,6 +250,10 @@
       </objects>
       <objects name="guardian">
         <object>objects\obj_guardian</object>
+      </objects>
+      <objects name="mega">
+        <object>objects\obj_mega</object>
+        <object>objects\obj_mega_bullet</object>
       </objects>
     </objects>
     <objects name="map">
