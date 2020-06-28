@@ -109,14 +109,20 @@
       <sprite>sprites\spr_menu_bar</sprite>
     </sprites>
     <sprites name="enemies">
-      <sprite>sprites\spr_bomb</sprite>
-      <sprite>sprites\spr_enemy_1</sprite>
-      <sprite>sprites\spr_ske_walk_right</sprite>
-      <sprite>sprites\spr_ske_attack</sprite>
-      <sprite>sprites\spr_bomb_brick</sprite>
-      <sprite>sprites\spr_ske_bullet</sprite>
-      <sprite>sprites\spr_totem_fire</sprite>
-      <sprite>sprites\spr_totem_fire_expl</sprite>
+      <sprites name="bomb">
+        <sprite>sprites\spr_bomb</sprite>
+        <sprite>sprites\spr_bomb_brick</sprite>
+      </sprites>
+      <sprites name="skull">
+        <sprite>sprites\spr_ske_attack</sprite>
+        <sprite>sprites\spr_ske_walk_right</sprite>
+      </sprites>
+      <sprites name="totem">
+        <sprite>sprites\spr_totem_fire</sprite>
+        <sprite>sprites\spr_totem_fire_expl</sprite>
+        <sprite>sprites\spr_totem_brown</sprite>
+        <sprite>sprites\spr_totem_bullet</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -214,14 +220,21 @@
     </objects>
     <objects name="enemies">
       <object>objects\obj_enemy_parent</object>
-      <object>objects\obj_bomb</object>
-      <object>objects\obj_boom_brick</object>
-      <object>objects\obj_boom_creater</object>
-      <object>objects\obj_skull_enemy</object>
-      <object>objects\obj_skull_enemy_hard</object>
-      <object>objects\obj_skull_bullet</object>
-      <object>objects\obj_totem_fire</object>
-      <object>objects\obj_totem_exp</object>
+      <objects name="bombs">
+        <object>objects\obj_boom_creater</object>
+        <object>objects\obj_boom_brick</object>
+        <object>objects\obj_bomb</object>
+      </objects>
+      <objects name="skull">
+        <object>objects\obj_skull_enemy</object>
+        <object>objects\obj_skull_enemy_hard</object>
+      </objects>
+      <objects name="totems">
+        <object>objects\obj_totem_fire</object>
+        <object>objects\obj_totem_exp</object>
+        <object>objects\obj_totem_brown</object>
+        <object>objects\obj_ball_totem</object>
+      </objects>
     </objects>
     <objects name="map">
       <object>objects\obj_player_map</object>
@@ -234,6 +247,9 @@
       <object>objects\obj_spr_player_menu</object>
     </objects>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\tl_totem_brown</timeline>
+  </timelines>
   <rooms name="rooms">
     <rooms name="rooms initial">
       <room>rooms\room_variables</room>

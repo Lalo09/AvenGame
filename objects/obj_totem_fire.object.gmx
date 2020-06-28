@@ -56,10 +56,10 @@ hspeed = choose(right,left);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if distance_to_object(obj_player) &lt; 45 {
+            <string>if distance_to_object(obj_player) &lt; 56 {
     instance_change(obj_totem_exp,true);
 }
-else if distance_to_object(obj_player) &gt;= 16 {
+else if distance_to_object(obj_player) &gt;= 57 {
 if dir = 1 {
     sprite_index = sprite;
     image_speed = 0.4;
@@ -78,11 +78,11 @@ if place_free (x,y+1){
     }
 }
 
-if not place_free(x+18,y){
+if not place_free(x+18,y) or place_free(x+18,y+32){
     hspeed = left;
     dir = 0;
 }
-if not place_free(x-18,y){
+if not place_free(x-18,y) or place_free(x-18,y+32){
     hspeed = right;
     dir = 1;
 }
