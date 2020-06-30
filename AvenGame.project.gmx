@@ -135,9 +135,11 @@
       </sprites>
     </sprites>
     <sprite>sprites\spr_stalagmitas</sprite>
-    <sprite>sprites\spr_pendule</sprite>
     <sprite>sprites\spr_item_bomb</sprite>
     <sprite>sprites\spr_explotion</sprite>
+    <sprite>sprites\spr_trap1</sprite>
+    <sprite>sprites\spr_trap3</sprite>
+    <sprite>sprites\spr_trap2</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="tiles">
@@ -275,6 +277,9 @@
       <object>objects\obj_spr_player_menu</object>
     </objects>
     <object>objects\obj_item_expl</object>
+    <object>objects\obj_trap1</object>
+    <object>objects\obj_trap2</object>
+    <object>objects\obj_trap3</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tl_totem_brown</timeline>

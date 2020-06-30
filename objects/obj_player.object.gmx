@@ -430,6 +430,94 @@ script_execute(state);
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_trap3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(inmunity = 0){
+    if other.image_index &gt;= 0 and other.image_index &lt;= 9 {
+    instance_create(self.x,self.y,obj_damage);
+    if global.healths = 0  {
+        global.healths = global.healths - 1 ;
+    }
+    else if(alarm[2] == -1) {
+            alarm[2]=1*room_speed;
+    }
+    /*
+    if self.x &lt; other.x {
+        if place_free(x-16,y+32) or  place_free(x-48,y-32) {
+            self.x -= 6;            
+        }                
+    }
+    if self.x &gt; other.x{
+        if place_free(x+16,y){
+            self.x += 6;
+        }
+    }*/
+    self.vspeed = -10;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_trap2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(inmunity = 0){
+    instance_create(self.x,self.y,obj_damage);
+    if global.healths = 0  {
+        global.healths = global.healths - 1 ;
+    }
+    else if(alarm[2] == -1) {
+            alarm[2]=1*room_speed;
+    }
+    /*
+    if self.x &lt; other.x {
+        if place_free(x-16,y+32) or  place_free(x-48,y-32) {
+            self.x -= 6;            
+        }                
+    }
+    if self.x &gt; other.x{
+        if place_free(x+16,y){
+            self.x += 6;
+        }
+    }*/
+    vspeed = -10;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_boom_brick">
       <action>
         <libid>1</libid>
