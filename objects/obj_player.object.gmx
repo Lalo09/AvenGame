@@ -365,11 +365,11 @@ else{
     gravity=0;
 }
     
-if key_left and place_free(x-playerSpeed,y){
+if key_left and place_free(x-playerSpeed,y) and self.y &lt; room_height{
     x-=playerSpeed;
 }
 
-if key_right and place_free(x+playerSpeed,y){
+if key_right and place_free(x+playerSpeed,y) and self.y &lt; room_height{
    x+=playerSpeed; 
 } 
 

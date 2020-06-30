@@ -204,6 +204,9 @@
     <instance objName="obj_platform_false" x="512" y="128" name="inst_2F2022DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_platform_false" x="544" y="128" name="inst_DB65E50A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mega" x="576" y="320" name="inst_B5E26669" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stalagmita" x="320" y="192" name="inst_0DCE7872" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_item_expl" x="352" y="320" name="inst_B01C9F35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_item_expl" x="256" y="320" name="inst_6A0A95FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tiles_bricks" x="0" y="352" w="32" h="32" xo="160" yo="161" id="10004444" name="inst_1FB0D17F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

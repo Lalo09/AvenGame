@@ -59,6 +59,41 @@ else{
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_item_expl">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>sprite_index = spr_bullet_end;
+image_speed = 0.8;
+//if other.image_index = 0 {
+    if self.x &gt; other.x {
+        other.vspeed = -5;
+        other.hspeed = 5;
+    }
+    else if self.x &lt; other.x{
+        other.vspeed = -5;
+        other.hspeed = -5;
+    }
+    other.expl += 1;
+//}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_enemy_parent">
       <action>
         <libid>1</libid>

@@ -22,6 +22,7 @@
       <sound>sound\sd_win</sound>
       <sound>sound\sd_death_2</sound>
       <sound>sound\sd_bullet_enemy</sound>
+      <sound>sound\sd_explotion</sound>
     </sounds>
     <sounds name="music">
       <sound>sound\music_menu</sound>
@@ -133,6 +134,10 @@
         <sprite>sprites\spr_mega_bullet</sprite>
       </sprites>
     </sprites>
+    <sprite>sprites\spr_stalagmitas</sprite>
+    <sprite>sprites\spr_pendule</sprite>
+    <sprite>sprites\spr_item_bomb</sprite>
+    <sprite>sprites\spr_explotion</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="tiles">
@@ -150,6 +155,7 @@
       <path>paths\path_map_w3</path>
     </paths>
     <path>paths\path_player_end_world</path>
+    <path>paths\path_item_pla</path>
   </paths>
   <scripts name="scripts">
     <scripts name="player_states">
@@ -226,6 +232,7 @@
       <object>objects\obj_player_game_over</object>
       <object>objects\obj_draw_game_over</object>
       <object>objects\obj_destroy</object>
+      <object>objects\obj_explotion_pla</object>
     </objects>
     <objects name="enemies">
       <object>objects\obj_enemy_parent</object>
@@ -255,6 +262,7 @@
         <object>objects\obj_mega</object>
         <object>objects\obj_mega_bullet</object>
       </objects>
+      <object>objects\obj_stalagmita</object>
     </objects>
     <objects name="map">
       <object>objects\obj_player_map</object>
@@ -266,6 +274,7 @@
       <object>objects\obj_menu_bar</object>
       <object>objects\obj_spr_player_menu</object>
     </objects>
+    <object>objects\obj_item_expl</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tl_totem_brown</timeline>
