@@ -28,6 +28,7 @@
       <sound>sound\music_menu</sound>
       <sound>sound\music_map123</sound>
       <sound>sound\music_city</sound>
+      <sound>sound\music_battle</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -94,6 +95,7 @@
       <sprite>sprites\spr_portal</sprite>
       <sprite>sprites\spr_portal_next_level</sprite>
       <sprite>sprites\spr_portal_next_world</sprite>
+      <sprite>sprites\spr_scroll</sprite>
     </sprites>
     <sprites name="platforms">
       <sprite>sprites\spr_mask</sprite>
@@ -133,6 +135,7 @@
         <sprite>sprites\spr_mega_attack</sprite>
         <sprite>sprites\spr_mega_bullet</sprite>
       </sprites>
+      <sprite>sprites\spr_boss_attack</sprite>
     </sprites>
     <sprite>sprites\spr_stalagmitas</sprite>
     <sprite>sprites\spr_item_bomb</sprite>
@@ -140,6 +143,7 @@
     <sprite>sprites\spr_trap1</sprite>
     <sprite>sprites\spr_trap3</sprite>
     <sprite>sprites\spr_trap2</sprite>
+    <sprite>sprites\spr_boss</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="tiles">
@@ -158,6 +162,7 @@
     </paths>
     <path>paths\path_player_end_world</path>
     <path>paths\path_item_pla</path>
+    <path>paths\path_boss_level</path>
   </paths>
   <scripts name="scripts">
     <scripts name="player_states">
@@ -280,6 +285,8 @@
     <object>objects\obj_trap1</object>
     <object>objects\obj_trap2</object>
     <object>objects\obj_trap3</object>
+    <object>objects\obj_boss</object>
+    <object>objects\obj_scroll_boss</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tl_totem_brown</timeline>

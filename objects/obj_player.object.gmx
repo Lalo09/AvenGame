@@ -651,7 +651,7 @@ state = ej.quiet
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>obj_skull.visible=true;
+            <string>//obj_skull.visible=true;
 </string>
           </argument>
         </arguments>
@@ -674,12 +674,14 @@ state = ej.quiet
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.score1 += 1000;
-audio_stop_all();
-other.visible = false;
-path_start(path_player_end_world,2,path_action_stop,false);
-if other.alarm[0] == -1{
-other.alarm[0] = 5;
+            <string>if other.visible = true {
+    global.score1 += 1000;
+    audio_stop_all();
+    other.visible = false;
+    path_start(path_player_end_world,2,path_action_stop,false);
+    if other.alarm[0] == -1{
+    other.alarm[0] = 5;
+    }
 }
 </string>
           </argument>
@@ -1062,6 +1064,33 @@ state = ej.quiet
           <argument>
             <kind>1</kind>
             <string>script_execute(scr_no_key);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="40">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if self.x-90 &lt; view_xview[0]{
+    if instance_exists(obj_scroll_boss){
+        instance_deactivate_all(true); 
+    }
+}
 </string>
           </argument>
         </arguments>
