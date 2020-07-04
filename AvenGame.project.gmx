@@ -29,6 +29,7 @@
       <sound>sound\music_map123</sound>
       <sound>sound\music_city</sound>
       <sound>sound\music_battle</sound>
+      <sound>sound\music_near_enemy</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -294,7 +295,6 @@
   <rooms name="rooms">
     <rooms name="rooms initial">
       <room>rooms\room_variables</room>
-      <room>rooms\rm_test</room>
       <room>rooms\room_menu</room>
       <room>rooms\room_game_over</room>
     </rooms>
@@ -302,9 +302,7 @@
       <room>rooms\room_map1</room>
       <rooms name="w1">
         <room>rooms\room_test</room>
-        <room>rooms\room_test2</room>
-        <room>rooms\room_test3</room>
-        <room>rooms\room_test4</room>
+        <room>rooms\rm_test</room>
       </rooms>
     </rooms>
   </rooms>

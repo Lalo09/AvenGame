@@ -10,7 +10,8 @@
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
-  <code>audio_play_sound(music_city,1,true);</code>
+  <code>audio_stop_all();
+audio_play_sound(music_near_enemy,1,true);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -169,6 +170,8 @@
     <instance objName="obj_item_expl" x="1248" y="416" name="inst_54D3B55B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_item_expl" x="1312" y="416" name="inst_2A5C0920" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_scroll_boss" x="320" y="224" name="inst_CA055C37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_skull" x="1408" y="448" name="inst_82272A4D" locked="0" code="to_room = room_map1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_portal_create" x="96" y="224" name="inst_3114FD31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tiles_bricks" x="0" y="0" w="32" h="32" xo="160" yo="257" id="10004851" name="inst_4184213A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

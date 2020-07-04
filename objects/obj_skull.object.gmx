@@ -2,7 +2,7 @@
 <object>
   <spriteName>spr_skull</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -127,7 +127,9 @@ instance_create(self.x-40,self.y-145,obj_portal_next_world);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>opacity = true;
+            <string>if self.visible = true {
+    opacity = true;
+}
 </string>
           </argument>
         </arguments>
