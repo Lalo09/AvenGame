@@ -158,6 +158,8 @@
   </backgrounds>
   <paths name="paths">
     <path>paths\path_item</path>
+    <path>paths\path_item_left</path>
+    <path>paths\path_item_right</path>
     <paths name="worlds">
       <path>paths\path_map_w1</path>
       <path>paths\path_map_w2</path>
@@ -305,8 +307,7 @@
       <room>rooms\room_map1</room>
       <rooms name="w1">
         <room>rooms\room_start_world</room>
-        <room>rooms\room_test</room>
-        <room>rooms\rm_test</room>
+        <room>rooms\room_level_1</room>
       </rooms>
     </rooms>
   </rooms>
