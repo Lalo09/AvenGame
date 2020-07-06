@@ -30,6 +30,7 @@
       <sound>sound\music_city</sound>
       <sound>sound\music_battle</sound>
       <sound>sound\music_near_enemy</sound>
+      <sound>sound\music_start</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -97,6 +98,7 @@
       <sprite>sprites\spr_portal_next_level</sprite>
       <sprite>sprites\spr_portal_next_world</sprite>
       <sprite>sprites\spr_scroll</sprite>
+      <sprite>sprites\spr_door</sprite>
     </sprites>
     <sprites name="platforms">
       <sprite>sprites\spr_mask</sprite>
@@ -288,6 +290,7 @@
     <object>objects\obj_trap3</object>
     <object>objects\obj_boss</object>
     <object>objects\obj_scroll_boss</object>
+    <object>objects\obj_door</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tl_totem_brown</timeline>
@@ -301,6 +304,7 @@
     <rooms name="rooms levels">
       <room>rooms\room_map1</room>
       <rooms name="w1">
+        <room>rooms\room_start_world</room>
         <room>rooms\room_test</room>
         <room>rooms\rm_test</room>
       </rooms>

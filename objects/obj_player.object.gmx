@@ -430,6 +430,38 @@ script_execute(state);
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_door">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if keyboard_check_pressed(vk_up) and vspeed = 0{
+//if vspeed &gt; 0 { //and y&lt;other.y+8 {
+    other.alarm[0] = 5;
+    other.solid = false;
+    other.opacity = true;
+//}
+vspeed = 0;
+move_contact_solid(270,12);
+state = ej.quiet
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_trap3">
       <action>
         <libid>1</libid>
@@ -621,14 +653,16 @@ if(inmunity = 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if vspeed &gt; 0 { //and y&lt;other.y+8 {
+            <string>if keyboard_check(vk_down){
+//if vspeed &gt; 0 { //and y&lt;other.y+8 {
     other.alarm[0] = 5;
-    other.solid = false;
+    //other.solid = false;
     other.opacity = true;
-}
+//}
 vspeed = 0;
 move_contact_solid(270,12);
 state = ej.quiet
+}
 </string>
           </argument>
         </arguments>
