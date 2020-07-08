@@ -27,7 +27,18 @@
             <kind>1</kind>
             <string>image_speed = 0.35;
 audio_play_sound(sd_itemCreate,1,false);
+
+if place_free(x,y-32){
 path_start(path_item,5,path_action_stop,false);
+}
+else{
+    if obj_player.x &lt;= self.x {
+        path_start(path_item_right,5,path_action_stop,false);
+    }
+    else{
+        path_start(path_item_left,5,path_action_stop,false);
+    }
+}
 </string>
           </argument>
         </arguments>

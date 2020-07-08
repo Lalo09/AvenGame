@@ -64,7 +64,7 @@
       <sprite>sprites\spr_coin</sprite>
       <sprite>sprites\spr_fly</sprite>
       <sprite>sprites\spr_computer</sprite>
-      <sprite>sprites\spr_arm_normal</sprite>
+      <sprite>sprites\spr_item_get_health</sprite>
       <sprite>sprites\spr_arm_max</sprite>
       <sprite>sprites\spr_arm_mega</sprite>
       <sprite>sprites\spr_skull</sprite>
@@ -209,7 +209,7 @@
       <object>objects\obj_brick</object>
     </objects>
     <objects name="items">
-      <object>objects\obj_gum_normal</object>
+      <object>objects\obj_get_health</object>
       <object>objects\obj_destroy_item</object>
       <object>objects\obj_coin</object>
       <object>objects\obj_gum_mega</object>

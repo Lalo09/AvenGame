@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0.1;
+item = obj_coin;
 </string>
           </argument>
         </arguments>
@@ -54,7 +55,8 @@ audio_play_sound(sd_shoot_end,1,false);
 with (other) { instance_destroy(); }
 //instance_change(obj_coin,true) ;
 //instance_change(obj_gum_normal,true) ;
-script_execute(scr_item_random);
+//script_execute(scr_item_random);
+instance_change(item,true); 
 instance_create(self.x,self.y,obj_destroy_item);
 
 </string>

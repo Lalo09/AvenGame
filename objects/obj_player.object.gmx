@@ -893,7 +893,7 @@ with(other){
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_gum_normal">
+    <event eventtype="4" ename="obj_get_health">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -910,7 +910,7 @@ with(other){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(sd_powerup_take,1,false);
+            <string>/**audio_play_sound(sd_powerup_take,1,false);
 global.score1 += 200;
 with(other){
     instance_destroy();
@@ -921,6 +921,11 @@ if bullet &gt; 0 {
 }
 else if bullet &gt;= 15{
     bullet = 16;
+}*/
+audio_play_sound(sd_powerup_take,1,false);
+global.healths = 8;
+with(other){
+    instance_destroy();
 }
 </string>
           </argument>
