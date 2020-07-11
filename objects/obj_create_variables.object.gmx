@@ -54,6 +54,7 @@ global.frec_boom = 9;
           <argument>
             <kind>1</kind>
             <string>room_goto(room_menu);
+//room_goto(rm_test);
 </string>
           </argument>
         </arguments>
