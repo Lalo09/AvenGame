@@ -29,9 +29,10 @@
     if obj_player.down = 0 then
     {
         if obj_player.bbox_bottom &gt; bbox_top {
+        //if obj_player.y &lt; self.y {
             solid = false;
         }
-        else{
+        else {
             solid = true;
         }
     }

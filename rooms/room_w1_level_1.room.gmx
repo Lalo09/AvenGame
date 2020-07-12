@@ -276,7 +276,6 @@ audio_play_sound(music_city,1,true);</code>
     <instance objName="obj_guardian" x="4864" y="320" name="inst_6F32B0E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_guardian" x="4608" y="320" name="inst_585D873C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bullet_enemy_creater" x="0" y="0" name="inst_7135C228" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mega" x="6178" y="509" name="inst_3BD83D07" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_portal_next_level" x="6711" y="365" name="inst_02748C2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mask" x="5760" y="544" name="inst_51F40DF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mask" x="5792" y="544" name="inst_E2526DD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -359,6 +358,7 @@ audio_play_sound(music_city,1,true);</code>
     <instance objName="obj_mask" x="5632" y="416" name="inst_74F4C330" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mask" x="5664" y="416" name="inst_5C264E78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mask" x="5696" y="416" name="inst_F733C396" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mini_golem" x="6176" y="512" name="inst_737EA56A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="&lt;undefined&gt;" x="96" y="96" w="32" h="32" xo="608" yo="0" id="10000546" name="inst_89E729EF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
