@@ -52,7 +52,7 @@ min_interval = 6;
             <string>if instance_exists(obj_player) and obj_player.y &lt;= view_yview[0]+500{
     num = irandom(interval);
     
-    if num &gt; 4 and num &lt;= min_interval  {
+    if num &gt; 5 and num &lt;= min_interval  {
         instance_create(view_xview[0]+700,view_yview[0]+irandom_range(35,470),obj_bullet_enemy);
     }
 }

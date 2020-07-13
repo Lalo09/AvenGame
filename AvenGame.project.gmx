@@ -314,7 +314,8 @@
       <rooms name="w1">
         <room>rooms\room_start_world</room>
         <room>rooms\room_w1_level_1</room>
-        <room>rooms\room_w2_level_2</room>
+        <room>rooms\room_w1_level_2</room>
+        <room>rooms\room_w1_level3A</room>
       </rooms>
     </rooms>
   </rooms>
