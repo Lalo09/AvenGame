@@ -31,6 +31,8 @@
       <sound>sound\music_battle</sound>
       <sound>sound\music_near_enemy</sound>
       <sound>sound\music_start</sound>
+      <sound>sound\music_underground</sound>
+      <sound>sound\music_level_boss</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -227,6 +229,7 @@
       <object>objects\obj_portal_next_level</object>
       <object>objects\obj_portal_create</object>
       <object>objects\obj_portal_next_world</object>
+      <object>objects\obj_item_expl</object>
     </objects>
     <objects name="gums">
       <object>objects\obj_bullet</object>
@@ -248,6 +251,8 @@
       <object>objects\obj_draw_game_over</object>
       <object>objects\obj_destroy</object>
       <object>objects\obj_explotion_pla</object>
+      <object>objects\obj_scroll_boss</object>
+      <object>objects\obj_door</object>
     </objects>
     <objects name="enemies">
       <object>objects\obj_enemy_parent</object>
@@ -279,6 +284,13 @@
         <object>objects\obj_golem_bullet</object>
       </objects>
       <object>objects\obj_stalagmita</object>
+      <object>objects\obj_trap1</object>
+      <object>objects\obj_mini_golem</object>
+      <object>objects\obj_trap2</object>
+      <object>objects\obj_trap3</object>
+      <objects name="Bosses">
+        <object>objects\obj_boss</object>
+      </objects>
     </objects>
     <objects name="map">
       <object>objects\obj_player_map</object>
@@ -290,14 +302,6 @@
       <object>objects\obj_menu_bar</object>
       <object>objects\obj_spr_player_menu</object>
     </objects>
-    <object>objects\obj_item_expl</object>
-    <object>objects\obj_trap1</object>
-    <object>objects\obj_trap2</object>
-    <object>objects\obj_trap3</object>
-    <object>objects\obj_boss</object>
-    <object>objects\obj_scroll_boss</object>
-    <object>objects\obj_door</object>
-    <object>objects\obj_mini_golem</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tl_totem_brown</timeline>
@@ -315,7 +319,9 @@
         <room>rooms\room_start_world</room>
         <room>rooms\room_w1_level_1</room>
         <room>rooms\room_w1_level_2</room>
-        <room>rooms\room_w1_level3A</room>
+        <room>rooms\room_w1_level_3</room>
+        <room>rooms\room_w1_level_4</room>
+        <room>rooms\room_w1_level_boss</room>
       </rooms>
     </rooms>
   </rooms>

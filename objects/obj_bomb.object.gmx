@@ -103,7 +103,7 @@ for(i = 0; i &lt; 12; i += 1){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if self.y &gt; room.room_height {
+            <string>if self.y &gt; view_yview[view_current] {
     instance_destroy();
 }
 </string>

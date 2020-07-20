@@ -25,9 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>time = 8;
+            <string>time = 12;
+path = path_boss_level;
 image_speed = 0.35;
-path_start(path_boss_level,4,path_action_stop,false);
+path_start(path,4,path_action_stop,false);
 alarm[0] = time*room_speed;
 </string>
           </argument>
