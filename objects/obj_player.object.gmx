@@ -44,6 +44,7 @@ timeFly= 0;
 inmunity=0;
 timeInmunity=0;
 down = 0;
+next_world = 0;
 </string>
           </argument>
         </arguments>
@@ -378,7 +379,7 @@ if key_jump and !place_free(x,y+1){
     state = ej.quiet;
     vspeed = -17.6;
 }
-}else if (canFly = 1) {
+}else if (canFly = 1 ){
     if key_jump {
     state = ej.quiet;
     vspeed = -13;
@@ -425,6 +426,14 @@ if global.live &lt; 0 {
     }
 }
 script_execute(state);
+
+if next_world = 1 {
+    self.image_alpha -= 0.08;
+}
+
+if canFly = 1 and global.healths &lt; 0 {
+    canFly = 0;
+}
 </string>
           </argument>
         </arguments>
@@ -713,9 +722,10 @@ state = ej.quiet
     audio_stop_all();
     other.visible = false;
     path_start(path_player_end_world,2,path_action_stop,false);
-    if other.alarm[0] == -1{
+    //if other.alarm[0] == -1{
     other.alarm[0] = 5;
-    }
+    //}
+    next_world = 1;
 }
 </string>
           </argument>

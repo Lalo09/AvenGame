@@ -58,7 +58,7 @@
     <instance objName="obj_mini_golem" x="480" y="128" name="inst_1B576E09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mini_golem" x="608" y="192" name="inst_B0D87452" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mini_golem" x="672" y="448" name="inst_94A1FD92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mega" x="1184" y="416" name="inst_04D99752" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mega" x="1216" y="416" name="inst_04D99752" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mega" x="2176" y="416" name="inst_A28F893F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mini_golem" x="3232" y="544" name="inst_9E25DC3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mini_golem" x="3648" y="512" name="inst_1CA539E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -483,6 +483,9 @@
     <instance objName="obj_door" x="7248" y="416" name="inst_3A29E364" locked="0" code="visible = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_draw_score" x="160" y="64" name="inst_3EED6F4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="160" y="160" name="inst_E475472A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_item_expl" x="992" y="448" name="inst_357EAF08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_item_expl" x="1088" y="448" name="inst_FB7B17DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_item_expl" x="4448" y="416" name="inst_5D5F2D17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tiles_city" x="64" y="480" w="192" h="160" xo="1" yo="352" id="10008266" name="inst_DAD2C00D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

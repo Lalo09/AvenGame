@@ -147,18 +147,20 @@ else if other.healths &lt;= 0 {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sprite_index = spr_bullet_end;
-image_speed = 0.8;
+            <string>//sprite_index = spr_bullet_end;
+//*image_speed = 0.8;
+instance_create(x,y,obj_destroy);
 //if other.image_index = 0 {
-    if self.x &gt; other.x {
+    if self.x &lt; other.x {
         other.vspeed = -5;
         other.hspeed = 5;     
     }
-    else if self.x &lt; other.x{
+    else if self.x &gt; other.x{
         other.vspeed = -5;
         other.hspeed = -5;
         }
     other.expl += 1;
+instance_destroy();
 //}
 </string>
           </argument>
