@@ -98,6 +98,7 @@
       <sprite>sprites\spr_fade_out</sprite>
       <sprite>sprites\spr_portal</sprite>
       <sprite>sprites\spr_portal_next_level</sprite>
+      <sprite>sprites\spr_portal_level</sprite>
       <sprite>sprites\spr_portal_next_world</sprite>
       <sprite>sprites\spr_scroll</sprite>
       <sprite>sprites\spr_door</sprite>
@@ -302,6 +303,7 @@
       <object>objects\obj_menu_bar</object>
       <object>objects\obj_spr_player_menu</object>
     </objects>
+    <object>objects\obj_portal_level</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tl_totem_brown</timeline>

@@ -411,7 +411,9 @@ if (inmunity = 1){
 }
 
 if global.healths = 0{
-    instance_deactivate_all(true);   
+    instance_deactivate_all(true); 
+    canFly = 0;
+    timeFly = 0;  
     //if alarm[7] == -1 { alarm[7] = 2; }
 }
 
@@ -431,7 +433,7 @@ if next_world = 1 {
     self.image_alpha -= 0.08;
 }
 
-if canFly = 1 and global.healths &lt; 0 {
+/**if canFly = 1 and global.healths &lt; 0 {
     canFly = 0;
 }
 </string>

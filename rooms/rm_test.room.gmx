@@ -153,12 +153,9 @@
     <instance objName="obj_platform_false" x="288" y="352" name="inst_677F2FC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_platform_false" x="320" y="352" name="inst_AC67F6A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_platform_false" x="352" y="352" name="inst_B288F165" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mega" x="512" y="416" name="inst_5542DBC7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_item_expl" x="224" y="416" name="inst_196964BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_item_expl" x="288" y="416" name="inst_7DD42F44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_item_expl" x="352" y="416" name="inst_CEE2185A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box_items" x="160" y="416" name="inst_32145D5D" locked="0" code="item = obj_fly;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_draw_score" x="96" y="384" name="inst_6DA10E49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_portal_level" x="516" y="423" name="inst_EDA78F3A" locked="0" code="to_portal = inst_BDED27DA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_portal_level" x="235" y="424" name="inst_BDED27DA" locked="0" code="to_portal = inst_EDA78F3A;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tiles_bricks" x="0" y="0" w="32" h="32" xo="0" yo="65" id="10006983" name="inst_2391E86C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
