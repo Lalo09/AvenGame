@@ -53,8 +53,8 @@ global.frec_boom = 9;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//room_goto(room_menu);
-room_goto(rm_test);
+            <string>room_goto(room_menu);
+//room_goto(rm_test);
 //room_goto(room_w1_level_boss);
 </string>
           </argument>

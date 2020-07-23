@@ -53,6 +53,7 @@ change_position = false;
             <string>change_position = false
 obj_player.x = to_portal.x;
 obj_player.y = to_portal.y;
+audio_play_sound(sd_bullet_enemy,1,false);
 </string>
           </argument>
         </arguments>
